@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Audeme</title>
+<link rel="stylesheet" href="css/prototype.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/orientation.js"></script>
+<script type="text/javascript" src="js/control.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/Iscroll4/iscroll.js"></script>
+</head>
+
+<body>
+<div class="page">
+
+<article>
+
+<div class="content_container">
+
+<div class="loading_content">
+<div class="score">Score:  <span>0</span></div>
+<div class = "scrolling">
+
+<div class="flashcard">
+<div id="cardword">
+<h1></h1></div>
+<div class="audiocontrol"  data-audio="cardaudio"></div>
+
+
+<div style="clear:left"></div>
+
+<div class= "synonymslist">
+<ul>
+</ul>
+</div>
+<div id="next">Next</div>
+<div id="previous">Previous</div>
+</div>
+
+<div class="gamezone">
+
+<!--<div class="audiocontrol" data-audio="gameaudio"></div>-->
+<div id = "gamestart">Play</div>
+<h1 id="gameword">Audeme Word Game</h1>
+<h1 id="gametitle">Audeme Word Game</h1>
+<p id="gamedescript">Find the right match</p>
+
+
+
+
+<div class = "gamepanels">
+<div class = "gamepanel" id="panel1" data-status="unused"></div>
+<div class = "gamepanel" id="panel2" data-status="unused"></div>
+<div class = "gamepanel" id="panel3" data-status="unused"></div>
+<div class = "gamepanel" id="panel4" data-status="unused"></div>
+<div class = "gamepanel" id="panel5" data-status="unused"></div>
+<div class = "gamepanel" id="panel6" data-status="unused"></div>
+<!--
+<div class = "gamepanel" id="panel7" data-status="unused"></div>
+<div class = "gamepanel" id="panel8" data-status="unused"></div>
+<div class = "gamepanel" id="panel9" data-status="unused"></div>
+-->
+</div>
+
+</div>
+
+</div>
+<div class="submenu">
+
+<div class= "menutab">
+<ul>
+<li id='game'>Game Zone</li>
+<li id="normal">Normal</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+<div class="listdrawer"></div>
+
+<div class="wordlist" id="scroll">
+<ul>
+</ul>
+</div>
+
+<div class = "notification">
+<h1>Success!</h1>
+
+<div id="starboard"></div>
+<!--<div id ="stars"><img src="images/starboard.png" width="330" height="90"></div>-->
+
+<div id = "close">
+PLAY AGAIN
+</div>
+</div>
+</article>
+<footer></footer>
+<header><p>Audeme</p></header>
+</div>
+</body>
+</html>

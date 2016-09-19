@@ -1,0 +1,151 @@
+﻿/* Contents
+
+1. General
+2. Top Nav
+3. Rotator
+4. Form
+5. Dictionary
+6. Fact Sheet
+7. Create Account
+
+*/
+
+/* 1. General */
+
+body, td, th 
+{
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+#content .title
+{
+    font-size: 36px;
+}
+
+/* 2. Top Nav */
+#menu ul li:first-child
+{
+    width: 125px;
+}
+
+#menu ul li:nth-child(5)
+{
+    width: 175px;
+}
+
+#menu ul li a
+{
+    padding: 10px 5px 0 0;
+    font-size: 22px;
+}
+
+#menu #tabLogIn
+{
+    padding-top: 0px;
+}
+
+#menu li span
+{
+    display: none;
+}
+
+/*  3. Rotator */
+
+.cs_article img
+{
+    display: none;   
+}
+
+.cs_article .text
+{
+    width: 880px;
+    float: none;  
+    margin: -70px 0 0 35px;    
+}
+
+.cs_article .text h2
+{
+    font-size: 175%;
+}
+
+.cs_article .text p
+{
+    font-size: 24px; 
+}
+
+/* 4. Form */
+
+label
+{
+    width: 150px;   
+}
+
+input, textarea, button
+{
+    font-size: 24px;
+}
+
+/* 5. Dictionary */
+
+#dashboardAudemeList .name
+{
+    font-size: 24px;  
+    width: 400px; 
+}
+
+#search #searchTermBox
+{
+    width: 850px;
+}
+
+/* 6. Fact Sheet */
+
+#factsheetgeneralinfo
+{
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+    position: static;
+}
+
+/* 7. Create Account */
+
+#form_createAccount label
+{
+    width: 300px;
+}
+
+/* 8. Games */
+
+.gametitle
+{
+    width: 350px;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+#rssTraining
+{
+    margin: auto;
+}
+
+#content #content_left p
+{
+    font-size: 24px;
+}
+
+.gamearea
+{
+    margin: 0 0 0 0;
+}
+
+#sequencecreationwrapper
+{
+    width: 520px;
+}
+
+#sequencecreation label
+{
+    width: 175px;
+}
