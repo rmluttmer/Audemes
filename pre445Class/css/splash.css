@@ -1,0 +1,38 @@
+﻿
+body 
+{
+    margin: 60px;
+	padding: 0;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+	color: #FFFFFF;
+	background-color: #000022;
+	line-height: 200%;
+	}
+
+a:link {text-decoration:none; color: #CCCCFF;}
+a:visited {text-decoration:none; color: #CCCCFF;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+.cookietext {font-size: small;}
+
+#audiosplash {margin-left: 0px;}
+
+
+p {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+
+ul 
+{
+    list-style-type:none;
+    font-size: large;
+    font-family: Verdana;
+    color: #FFFFFF;
+    line-height: 200%;
+    text-align: center;
+}

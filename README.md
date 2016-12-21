@@ -1,2 +1,0 @@
-# Audemes
-Auditory learning
