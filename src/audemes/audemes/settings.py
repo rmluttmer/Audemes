@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'directory',
-    'games',
 ]
 
 MIDDLEWARE = [
@@ -54,10 +52,16 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'audemes.urls'
 
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.load_template_source',
+)
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR + '/templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

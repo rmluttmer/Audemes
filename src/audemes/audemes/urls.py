@@ -1,6 +1,5 @@
 from django.conf.urls import url, include
-from main.views import home, about
-from directory.views import index
+from main.views import *
 
 """audemes URL Configuration
 
@@ -22,8 +21,9 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',home, name='home'),
+    url(r'^$', home),
+    url(r'^index$', home),
     url(r'^about$', about, name='about'),
-    url(r'^directory/', include('directory.urls')),
-    url(r'^games/', include('games.urls')),
+    url(r'^game$', game, name='game'),
+    url(r'^dictionary$', dictionary, name='dictionary'),
 ]
