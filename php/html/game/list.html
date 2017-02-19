@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sequences list</title>
+</head>
+<style>
+span {
+	margin-left: 3rem;
+}
+
+ol li:nth-child(even) {background: #CCC}
+ol li:nth-child(odd) {background: #FFF}
+
+#gotop {
+	position:fixed;
+	right:100px;
+	bottom:100px;
+	cursor:pointer;
+	font-size:24px;
+	color:blue;
+	display:none;
+}
+</style>
+<body>
+<h1>Audeme Sequences</h1>
+<ul>
+<li><a href="#levelOne">Level 1</a></li>
+<li><a href="#levelTwo">Level 2</a></li>
+<li><a href="#levelThree">Level 3</a></li>
+<li><a href="#levelFour">Level 4</a></li>
+</ul>
+
+<h1>Level 1</h1>
+	<ol id="levelOne"></ol>
+<h1>Level 2</h1>
+	<ol id="levelTwo"></ol>
+<h1>Level 3</h1>
+	<ol id="levelThree"></ol>
+<h1>Level 4</h1>
+	<ol id="levelFour"></ol>
+<div id="gotop">Back to Top</div>
+
+<script src="sequences.js"></script>
+<script src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+(function(list1,list2,list3,list4){
+	var mapping = ['AI', 'AN', 'EA', 'RI', 'IN', 'LO', 'FI', 'MA', 'LI', 'BI', 'CO', 'SM', 'FA', 'PR', 'SL', 'PE', 'OU', 'TI'];
+	
+
+	for (var i=0, len=list1.length; i<len;i++) {
+		var sequence = '';
+		sequence += list1[i].answer;
+		var tempList = list1[i].list;
+		for (var k=0, leng=tempList.length;k<leng;k++) {
+			sequence+='<span>' + mapping[tempList[k]] + '</span>'
+		}
+		sequence += '<span>' + (list1[i].fixedOrder?'Fixed order':'Randomized') + '</span>';
+		sequence += '<span>' + list1[i].hint + '</span>';
+		$("#levelOne").append('<li>'+ sequence +'</li>')
+	}
+	
+	for (var i=0, len=list2.length; i<len;i++) {
+		var sequence = '';
+		sequence += list2[i].answer;
+		var tempList = list2[i].list;
+		for (var k=0, leng=tempList.length;k<leng;k++) {
+			sequence+='<span>' + mapping[tempList[k]] + '</span>'
+		}
+		sequence += '<span>' + (list2[i].fixedOrder?'Fixed Order':'Randomized') + '</span>';
+		sequence += '<span>' + list2[i].hint + '</span>';
+		$("#levelTwo").append('<li>'+ sequence +'</li>')
+	}
+	
+	for (var i=0, len=list3.length; i<len;i++) {
+		var sequence = '';
+		sequence += list3[i].answer;
+		var tempList = list3[i].list;
+		for (var k=0, leng=tempList.length;k<leng;k++) {
+			sequence+='<span>' + mapping[tempList[k]] + '</span>'
+		}
+		sequence += '<span>' + (list3[i].fixedOrder?'Fixed Order':'Randomized') + '</span>';
+		sequence += '<span>' + list3[i].hint + '</span>';
+		$("#levelThree").append('<li>'+ sequence +'</li>')
+	}
+	
+	for (var i=0, len=list4.length; i<len;i++) {
+		var sequence = '';
+		sequence += list4[i].answer;
+		var tempList = list4[i].list;
+		for (var k=0, leng=tempList.length;k<leng;k++) {
+			sequence+='<span>' + mapping[tempList[k]] + '</span>'
+		}
+		sequence += '<span>' + (list4[i].fixedOrder?'Fixed Order':'Randomized') + '</span>';
+		sequence += '<span>' + list4[i].hint + '</span>';
+		$("#levelFour").append('<li>'+ sequence +'</li>')
+	}
+
+})(sequenceList1,sequenceList2,sequenceList3,sequenceList4);
+
+$(function(){
+    $("#gotop").click(function(){
+        $("html,body").animate({
+            scrollTop:0
+        },400);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
+
+
+
+</script>
+	
+</body>
+</html>

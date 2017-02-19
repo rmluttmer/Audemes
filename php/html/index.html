@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Audeme Grids</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/homeStyle.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/playerStyles.css"/>
+	<script type="text/javascript" src="js/amplitude.js"></script>
+</head>
+
+
+<body>
+     <nav class="navbar navbar-default" role="navigation">
+         <div class="container-fluid text-center">
+             <div class="navbar-header">
+               				<a class="navbar-brand logo" href="#">
+ 					<img id="logoimage" alt="logo" src="images/Audeme-Logo-small3.png">
+ 				</a>
+             </div>
+             <ul class="nav navbar-nav tabs" role="tablist">
+                              <li role="presentation" id="home"><a role="tab" tabindex="0" href="#">Home</a></li>
+                 <li role="presentation" id="dictionary"><a role="tab" tabindex="0" href="search/dictionary.php">Dictionary</a></li>
+                 <li role="presentation" id="game"><a role="tab" tabindex="0" href="game/index.html" >Games</a></li>
+                 <li role="presentation" id="about"><a role="tab" tabindex="0" href="about.html">About</a></li>
+             </ul>
+         </div>
+     </nav>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-6 text-left">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="text-center" tabindex="0">What is an Audeme?</h3>
+                    </div>
+                    <div class="panel-body" tabindex="0">
+                        <p>Pronounced "awe deems," they are brief audio illustrations that combine sound effects,
+                        sometimes with music, to form aural symbols that signify various ideas, things, actions
+                        and situations. For example, an Audeme combining the sound of a cat’s meow and a person
+                        snoring could mean "Cat Nap". <br> <br> Since 2007 we have worked with blind and visually impaired students
+                        and their teachers to develop audemes and audeme games. The results have been very encouraging.
+                        Students who hear audemes presented with educational materials score significantly better in tests
+                        of those materials than students who did not hear the audemes. And when students play audeme riddle
+                        games based on chapters from standard science textbooks, they score significantly better in end-of-chapter
+                        tests than in tests for chapters learned without audeme games. After a year of audeme game play, students
+                        expressed significantly more positive subjective attitudes about science and science learning. These results
+                        have helped our work generate grant funding from the Nina Mason Pulliam Charitable Trust, Google Research Awards
+                        and the National Science Foundation. <br> <br> This website offers a basic introduction to the whole idea of audemes and
+                        audeme games. We believe we have just begun to explore the possibilities of audemes, audeme games and other
+                        applications yet to be developed. We welcome- your comments, questions and ideas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="text-center" tabindex="0">Try it now!</h3>
+                    </div>
+                    <div class="panel-body" tabindex="0">
+                    <div class="player" id="player-1">
+                        <div class="player-top">
+                            <div class="amplitude-play-pause amplitude-list-paused" amplitude-song-index="0"></div>
+                            <input type="range" class="amplitude-song-slider" amplitude-song-slider-index="0" value="0">
+                            <div class="track-info-container">
+                                <span class="amplitude-now-playing-title">end of the road</span>
+                            </div>
+                            <div class="amplitude-song-time-visualization" amplitude-song-time-visualization-index="0"></div>
+                        </div>
+                        <img class="img-responsive" src="images/listeningnew.png">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,680 @@
+body{
+background-color:#FAFAFA;
+color: #333333;
+font-family: 'Clear Sans', Helvetica, sans-serif;
+width:100;
+font-weight:bold;
+}
+
+html, body {
+margin: 0;
+padding: 0;
+}
+
+h1, h2, h3{
+font-family: Arial, Helvetica, sans-serif;
+font-size:20px;
+}
+
+h2, h3{
+margin:0;
+}
+
+.navi{
+    width: 840px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo{
+float: left;
+}
+.navi-menu{
+    width: 480px;
+    float: right;
+    padding-top: 40px;
+}
+
+.navi-menu ul {
+	padding: 13px 0 0 0;
+	margin: 0;
+	list-style: none;
+	
+}
+
+.navi-menu ul li {
+	
+	background-position: top right;
+	background-repeat: repeat-y;
+	display: inline-block;
+	
+    padding: 0px 15px 0px 15px;
+}
+.navi-menu ul>li +li{
+	border-left: 1px solid rgba(41,45,109,1);
+ }
+
+.navi-menu ul li a {
+	float: left;
+	padding: 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	color: rgba(41,45,109,1);
+	outline: none;
+} 
+
+
+.navi-menu ul li:last-child
+{
+    background-image: none;
+}
+
+
+#columns3{
+background:url("img/column3.png");
+}
+
+#columns4{
+background:url("img/column4.png");
+}
+
+#columns5{
+background:url("img/column5.png");
+}
+
+#columns6{
+background:url("img/column6.png");
+}
+
+#scene {
+/*float:left;*/
+margin:0 5px;
+}
+
+#sceneWrapper {
+/*width:600px;*/
+height:400px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius:4px;
+background-color: #fff27b;
+position:relative;
+}
+
+#sceneTitle {
+display:block;
+}
+
+#controlPanelBottom
+ {
+display:block;
+/*width:0;*/
+height:50px;
+margin: 5px 0;
+}
+#gameArea {
+display:block;
+height:100%;
+position:absolute;
+text-align:center;
+width:100%;
+top:0;
+overflow:hidden;
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+	#gameArea{transform:scale(0.75);}
+}
+/*
+@media (min-width:800px) and (max-width:1024px) {
+	#gameArea{transform:scale(0.6);}
+}
+*/
+#leftPart  {
+display:block;
+height:630px;
+width:400px;
+float:left;
+margin-left:60px;
+margin-top:20px;
+margin-right: 20px;
+position:relative;
+}
+
+#leftPart::after  {
+display: block;
+content: ' ';
+height: 570px;
+position: absolute;
+border-right: 2px #dfdfdf solid;
+top: 30px;
+right: -22px;
+}
+
+
+#controlPanelRight {
+display:block;
+height:0;
+width:240px;
+float:left;
+margin:0 40px 0 20px;
+position:relative;
+}
+
+#console {
+display:block;
+outline: 2px solid black;
+height:630px;
+width:170px;
+float:left;
+margin-left:10px;
+margin-top:20px;
+}
+
+
+#timer, #revealAnswers,#hints{
+display:none;
+margin: 5px auto 2px;
+text-align:center;
+color:#26C6DA;
+position:relative;
+
+height:auto; 
+overflow:auto;
+}
+
+#revealAnswers{
+margin: 10px auto 2px;
+}
+
+#timer {
+width:150px;
+min-height:150px;
+background:url("img/clockface.png");
+background-size: 150px;
+
+}
+
+#scoreBoard h1 {
+font-size:20px;
+margin-top:60px;
+}
+
+#hints, #descriptions{
+min-height:50px;
+text-align:center;
+}
+
+#descriptions {
+display:block;
+visibility:hidden;
+border-top: 2px #dfdfdf solid;
+margin-top: 10px;
+}
+
+#descriptions h1{
+
+}
+
+#hints p, #descriptions p{
+color:#333333;
+font-size:20px;
+text-transform:capitalize;
+
+}
+
+#descriptions p{
+margin:0;
+padding:0;
+}
+
+#scoreBoard  {
+min-height:110px;
+padding-bottom:20px;
+border-bottom:2px solid #dfdfdf;
+border-radius:2px;
+box-sizing:border-box;
+}
+
+#scoreBoard>p {
+margin:5px 15px;
+padding:0;
+font-size:24px;
+text-align:justify;
+}
+
+#hints>h1{
+cursor:pointer;
+}
+
+#hints>p {
+display:none;
+}
+
+#answer, #hint {
+cursor:pointer;
+color:#26C6DA;
+}
+
+#answerTutorial {
+color:#26C6DA;
+}
+
+#answer.unclickable, #playNext.unclickable, #replay.unclickable, #answer.unclickable, #hint.unclickable  {
+color:#dddddd;
+cursor:default;
+}
+
+#tips{
+text-align:center;
+height:48px;
+}
+
+
+.controlButton {
+/*display:none;*/
+width:46px;
+height:46px;
+/*float:left;*/
+cursor:pointer;
+background-color:#EEEEEE;
+border-radius:2px;
+opacity:0.5;
+}
+
+.controlButton.active {
+opacity:1;
+}
+
+.customButton{
+height:46px;
+min-width:50px;
+background-color:#EEEEEE;
+border-radius:2px;
+opacity:0.8;
+border:0;
+margin-bottom:10px;
+margin-top:10px;
+cursor:pointer;
+padding: 0 10px 0 10px;
+}
+
+.controlButton:hover, #playNext:hover , #replay:hover .customButton:hover{
+opacity:1;
+}
+
+.controlButton+.controlButton {
+margin-left:5px;
+}
+
+#replay {
+/*background-image:url("img/icon-replay.png");*/
+}
+
+#add {
+background-image:url("img/icon-plus.png");
+}
+
+#remove {
+background-image:url("img/icon-minus.png");
+}
+
+#playNext, #gameStart, #replay, #answer  {
+color:#26C6DA;
+cursor:pointer;
+margin-left:1em;
+margin-right:1em;
+}
+
+#columns {
+padding-top:5px;
+width:100%;
+clear:both;
+text-align: justify;
+overflow: hidden;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+border-top: 2px #dfdfdf solid;
+}
+
+ .blink {
+      animation: blink 0.7s steps(2, start) infinite;
+      -webkit-animation: blink 0.7s steps(2, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        color:#26C6DA;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+       color:#26C6DA;
+      }
+    }
+
+#nextWrapper, #replayWrapper {
+float:right;
+cursor: default;
+margin:0 0 0 10px;
+}
+
+#answerWrapper, #hintWrapper {
+  min-width: 50px;
+  background-color: #EEEEEE;
+  border-radius: 2px;
+  opacity: 0.8;
+  border: 0;
+  cursor: pointer;
+  padding: 3px;
+  height: auto;
+ margin:auto;
+ word-wrap: break-word;
+}
+
+#answerWrapper.unclickable, #hintWrapper.unclickable {
+cursor:default;
+}
+
+#answerWrapperTutorial {
+  min-width: 50px;
+  background-color: #EEEEEE;
+  border-radius: 2px;
+  opacity: 0.8;
+  border: 0;
+  padding: 3px;
+  height: auto;
+ margin:auto;
+ word-wrap: break-word;
+}
+
+#gameStart {
+cursor:pointer;
+margin-left:1em;
+margin-right:1em;
+}
+
+
+.customButtonSmall{
+height:44px;
+min-width: 220px;
+text-align: center;
+background-color:#EEEEEE;
+border-radius:2px;
+opacity:0.8;
+border:0;
+margin: 10px 20px 0 20px;
+cursor:pointer;
+font-size:20px;
+color:#26c6da
+}
+
+.customButtonSmall:hover {
+opacity:1;
+}
+
+.center {
+margin-left:auto;
+margin-right:auto;
+}
+
+#level>h1 {
+font-size:60px;
+margin:10px 0;
+}
+
+#sceneTitle>h2 {
+font-size:30px;
+}
+
+.digit {
+font-size: 72px;
+/* margin: 35px 2px; */
+display: inline;
+color: #F08C0F;
+top: 35px;
+position: relative;
+text-align: center;
+}
+
+.scoreDigit {
+font-size:24px;
+float:right;
+display:inline;
+font-weight: bold;
+}
+
+#beforeGameStart {
+background-color:rgba(0,0,0,0.7);
+width:100%;
+height:100%;
+position:absolute;
+left:0;
+top:0;
+z-index:3;
+text-align:center;
+overflow:hidden;
+}
+
+#gameStartWrapper {
+margin:50px auto;
+background-color: white;
+border: solid black 1px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+max-width:420px;
+padding-bottom: 28px;
+box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+-webkit-box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+-moz-box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+
+}
+
+#panelWrapper {
+height:100%;
+width:auto;
+overflow:hidden;
+display:inline-block;
+background:white;
+padding:0;
+}
+
+#sceneTitle {
+text-align:center;
+}
+
+
+#answerConfirm, #timeOut, #audemeNameInput, #bonus, #endPanel, .tutorials{
+text-align: center;
+width: 550px;
+position:fixed;
+display: none;
+background-color: white;
+border: solid black 1px;
+left: 50%;
+margin-left:-275px;
+padding: 30px;
+z-index: 2;
+top: 200px;
+box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+-webkit-box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+-moz-box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+font-size:20px;
+background-color:#FAFAFA;
+}
+
+
+.tutorials {
+top: 150px;
+width:550px;
+z-index:4;
+left: 50%;
+margin-left: -275px;
+}
+
+#tutorial4{
+width:700px;
+margin-left: -350px;
+
+}
+
+.tutorials >.content{
+min-height:80px;
+width:90%;
+position:relative;
+margin:5px auto;
+
+}
+.tutorials  p{
+text-align:left;
+}
+button, input {
+margin:20px;
+}
+
+#audemeNameInput input{
+height:36px;
+font-size:20px;
+color:#666666;
+}
+
+.audemeTitle {
+font-size: 50px;
+color: rgba(41,45,109,1);
+margin: 25px 0 15px 0;
+}
+
+
+.panelCircle {
+width: 140px;
+height: 140px;
+-moz-border-radius: 70px;
+-webkit-border-radius: 70px;
+border-radius: 70px;
+/*margin:20px 20px 20px 55px;*/
+position:absolute;
+z-index:1;
+display:none;
+}
+
+.panelGrid {
+width: 120px;
+height: 120px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+/*margin:20px 20px 20px 55px;*/
+position:absolute;
+z-index:1;
+display:none;
+font-size:20px;
+color:white;
+padding:90px 10px 20px 10px;
+box-sizing:border-box;
+text-align:left;
+}
+
+.tutorials .panelGrid {
+
+margin:0 20px 20px 20px;
+position:relative;
+float:left;
+z-index:1;
+display:block;
+font-size:20px;
+color:white;
+padding:90px 10px 20px 10px;
+box-sizing:border-box;
+
+}
+
+.tutorials .panelGrid:hover + p#tutorialDescription2 {
+visibility:visible!important;
+}
+
+.tutorialDescription {
+color:#26C6DA;
+display:block;
+float:left;
+margin-top:45px;
+}
+
+.color-grey {
+background-color:#a4a5b7;
+}
+
+.color-red, .hover-red:hover {
+background-color:#ea0000;
+}
+
+.color-blue, .hover-blue:hover {
+background-color:#42a5f5;
+}
+
+.color-green, .hover-green:hover {
+background-color:#AEEA00;
+}
+
+.custonButton>h1 {
+font-size: 20px;
+}
+
+label {
+display: inline-block;
+cursor: pointer;
+position: relative;
+padding-left: 45px;
+margin: 5px 15px;
+font-size: 22px;
+width:300px;
+}
+
+label:hover {
+color:#26C6DA;
+}
+
+input[type=radio] {
+display: none;
+}
+
+label::before {
+content: '';
+display: inline-block;
+width: 22px;
+height: 22px;
+margin-right: 10px;
+position: absolute;
+left: 0;
+bottom: 1px;
+background-color: #dddddd;
+box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+border-radius:11px;
+}
+
+input[type=radio]:checked + label:before {
+content: "\2022";
+color: #26C6DA;
+font-size: 44px;
+text-align: center;
+line-height: 20px;
+}
+
+input[type=radio]:checked + label {
+color: #26C6DA;
+}
+
+#gameStartButton {
+margin-top:40px;
+}
+
+#scoreBoard>p {
+opacity:0.3;
+}
+
+#scoreBoard>p.current{
+opacity:1;
+}
