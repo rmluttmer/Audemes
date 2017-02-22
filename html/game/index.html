@@ -7,58 +7,96 @@
 
     <title>Audeme Game</title>
     <!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]
     <link rel="stylesheet" type="text/css" media="screen" href="clear-sans.css" />
     <link rel="stylesheet" href="styles.css">-->
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-	<link href="../css/homeStyle.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/playerStyles.css"/>
-<!---	<script type="text/javascript" src="js/amplitude.js"></script> --->
- <script type="text/javascript" >
- function demo(){
-    document.getElementById('gameStartButton').remove();
-    var list = document.createElement('ul');
-    document.getElementById('body').append(list);
- for (var i = 0; i < 3; i++){
- var audeme = document.createElement('li');
- list.append(audeme);
- var button = document.createElement('button');
- button.innerHTML = 'Play';
- audeme.append(button);
- var description = document.createTextNode('Description');
- audeme.append(description);
- }
- }
- </script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/homeStyle.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/playerStyles.css"/>
+    <!---	<script type="text/javascript" src="js/amplitude.js"></script> --->
+    <!---
+<script src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="sequences.js"></script>
+<script type="text/javascript" src="control.js"></script>---->
+    <script type="text/javascript" >
+
+        function demo(){
+            document.getElementById('gameStartButton').remove();
+            var list = document.createElement('ol');
+            var body = document.getElementById('left');
+            list.setAttribute('class', 'row');
+            list.setAttribute('id', 'advance');
+            body.appendChild(list);
+            for (var i = 0; i < 3; i++){
+                var audeme = document.createElement('li');
+                audeme.setAttribute('class', 'col-md-2');
+                list.appendChild(audeme);
+                var button = document.createElement('button');
+                button.setAttribute('tabindex', '0');
+                button.innerHTML = 'Play Sound';
+                audeme.appendChild(button);
+                var description = document.createElement('p');
+                description.innerHTML = 'Description';
+                description.setAttribute('tabindex', '0');
+                audeme.appendChild(description);
+            }
+            var listright = document.createElement('ol');
+            var right = document.getElementById('right');
+            var answerheading = document.createElement('h1');
+            answerheading.innerHTML = 'Answers';
+            right.appendChild(answerheading);
+            listright.setAttribute('class', 'row');
+            listright.setAttribute('id', 'advance');
+            right.appendChild(listright);
+            for (i = 0; i < 3; i++){
+                var answer = document.createElement('li');
+                answer.setAttribute('class', 'col-md-2');
+                listright.appendChild(answer);
+                var buttonAnswer = document.createElement('button');
+                buttonAnswer.setAttribute('tabindex', '0');
+                buttonAnswer.innerHTML = 'Answer '+(i+1);
+                answer.appendChild(buttonAnswer);
+                var descriptionAnswer = document.createElement('p');
+                descriptionAnswer.innerHTML = 'Description';
+                descriptionAnswer.setAttribute('tabindex', '0');
+                answer.appendChild(descriptionAnswer);
+            }
+        }
+    </script>
 
 </head>
 
 
 <body id="body">
 
-     <nav class="navbar navbar-default" role="navigation">
-         <div class="container-fluid text-center">
-             <div class="navbar-header">
-               				<a class="navbar-brand logo" href="#">
- 					<img id="logoimage" alt="logo" src="../images/Audeme-Logo-small3.png">
- 				</a>
-             </div>
-             <ul class="nav navbar-nav tabs" role="tablist">
-                              <li role="presentation" id="home"><a role="tab" tabindex="0" href="../index.html">Home</a></li>
-                 <li role="presentation" id="dictionary"><a role="tab" tabindex="0" href="../search/dictionary.php">Dictionary</a></li>
-                 <li role="presentation" id="game"><a role="tab" tabindex="0" href="#" >Games</a></li>
-                 <li role="presentation" id="about"><a role="tab" tabindex="0" href="../about.html">About</a></li>
-             </ul>
-         </div>
-     </nav>
-     
-         <div id="beforeGameStart" style="" class="center">
-        <div id="gameStartWrapper">
-            <h1 class="audemeTitle">Atomic Guessing Game</h1>
-            <button onclick="demo()" id="gameStartButton" class="customButton center">
-                <h1 id="gameStart">GAME START<h1></button>
-</div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid text-center">
+        <div class="navbar-header">
+            <a class="navbar-brand logo" href="#">
+                <img id="logoimage" alt="logo" src="../images/Audeme-Logo-small3.png">
+            </a>
+        </div>
+        <ul class="nav navbar-nav tabs" role="tablist">
+            <li role="presentation" id="home"><a role="tab" tabindex="0" href="../index.html">Home</a></li>
+            <li role="presentation" id="dictionary"><a role="tab" tabindex="0" href="../search/dictionary.php">Dictionary</a></li>
+            <li role="presentation" id="game"><a role="tab" tabindex="0" href="#" >Games</a></li>
+            <li role="presentation" id="about"><a role="tab" tabindex="0" href="../about.html">About</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-sm-6 text-left" id="left">
+        <h1 class="audemeTitle" tabindex="0">Atomic Guessing Game</h1>
+        <p tabindex="0">Listen to the three atomic audemes and guess the concept they represent from the choices on the right</p>
+        <button onclick="demo()" id="gameStartButton" class="customButton center">
+            <h1 id="gameStart" tabindex="0">GAME START</h1></button>
+    </div>
+    <div class="col-sm-6 text-left" id="right">
+
+    </div>
 </div>
 <!---
     <div id="beforeGameStart" style="">
@@ -84,9 +122,9 @@
 </div>
 </div>
 <div id="gameArea">
-    
+
 <div id="panelWrapper">
-<div id="leftPart"> 
+<div id="leftPart">
     <div id="sceneTitle">
         <h1 class="audemeTitle">Audeme Grids</h1>
     </div>
@@ -191,7 +229,7 @@ Your browser can't view the HTML5 canvas element!
         </div>
         <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
         <button id="tutorialNext1" class="customButtonSmall">Next</button>
-        
+
     </div>
 
     <div id="tutorial2" class="tutorials">
@@ -204,7 +242,7 @@ Your browser can't view the HTML5 canvas element!
         </div>
         <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
         <button id="tutorialNext2" class="customButtonSmall">Next</button>
-        
+
         <audio id="tutorialAudio2">
             <source src="audio/8_water.mp3" type="audio/mpeg">
         </audio>
@@ -223,7 +261,7 @@ Your browser can't view the HTML5 canvas element!
         </div>
         <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
         <button id="tutorialNext3" class="customButtonSmall">Next</button>
-        
+
         <audio id="tutorialAudio31">
             <source src="audio/8_water.mp3" type="audio/mpeg">
         </audio>
@@ -247,7 +285,7 @@ Your browser can't view the HTML5 canvas element!
         </div>
         <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
         <button id="tutorialNext4" class="customButtonSmall">Next</button>
-        
+
         <audio id="tutorialAudio41">
             <source src="audio/3_machine.mp3" type="audio/mpeg">
         </audio>
@@ -267,7 +305,7 @@ Your browser can't view the HTML5 canvas element!
         </div>
         <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
         <button id="tutorialNext5" class="customButtonSmall">Next</button>
-        
+
     </div>
 
     <div id="tutorial6" class="tutorials">
@@ -280,7 +318,7 @@ Your browser can't view the HTML5 canvas element!
         </div>
         <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
         <button id="tutorialNext6" class="customButtonSmall">Next</button>
-        
+
     </div>
 
     <div id="tutorial7" class="tutorials">
@@ -297,7 +335,7 @@ Your browser can't view the HTML5 canvas element!
         </div>
         <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
         <button id="tutorialNext7" class="customButtonSmall">Next</button>
-        
+
     </div>
 
     <div id="tutorial8" class="tutorials">
@@ -307,7 +345,7 @@ Your browser can't view the HTML5 canvas element!
         </div>
         <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
         <button id="tutorialNext8" class="customButtonSmall">Next</button>
-        
+
     </div>
 
     <div id="tutorial9" class="tutorials">
@@ -318,11 +356,6 @@ Your browser can't view the HTML5 canvas element!
         </div>
         <button id="" class="customButtonSmall skipTutorial">Start</button>
     </div>
-    <script src="jquery-1.11.1.min.js"></script>
-    <!
-    <script type="text/javascript" src="data.js"></script>
-    <script type="text/javascript" src="sequences.js"></script>
-    <script type="text/javascript" src="control.js"></script>---->
 </body>
 
 </html>
