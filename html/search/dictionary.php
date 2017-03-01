@@ -39,7 +39,7 @@
         <ul class="nav navbar-nav tabs" role="tablist">
             <li role="presentation" id="home"><a role="tab" tabindex="0" href="../index.html">Home</a></li>
             <li role="presentation" id="dictionary"><a role="tab" tabindex="0" href="#">Dictionary</a></li>
-            <li role="presentation" id="game"><a role="tab" tabindex="0" href="../game/index.html">Games</a></li>
+            <li role="presentation" id="game"><a role="tab" tabindex="0" href="../game/game.php">Games</a></li>
             <li role="presentation" id="about"><a role="tab" tabindex="0" href="../about.html">About</a></li>
         </ul>
     </div>
@@ -100,7 +100,7 @@ foreach($files as $file) {
     $filename = explode("." , $file);
     $fileonly = $filename[0];
     echo '<audio id="' . $fileonly . '" src="http://audemes.aphtech.org/audio/' . $file . '" preload="auto"></audio>' ;
-    echo '<button type="submit" onclick="document.getElementById(\"'. $fileonly .'\").play();">' . $file . '</button>';
+    echo '<button type="submit" onclick="document.getElementById(\''. $fileonly .'\').play();">' . $file . '</button>';
     echo '</li>';
     echo '<br>';
 }

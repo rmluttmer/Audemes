@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Audeme Game</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]
+    <link rel="stylesheet" type="text/css" media="screen" href="clear-sans.css" />
+    <link rel="stylesheet" href="styles.css">-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/homeStyle.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/playerStyles.css"/>
+    <!---	<script type="text/javascript" src="js/amplitude.js"></script> --->
+    <!---
+<script src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="sequences.js"></script>
+<script type="text/javascript" src="control.js"></script>---->
+    <script type="text/javascript" >
+        var choice;
+        var array = ['machine 1', 'rising', 'air 1'];
+        var answers = ['hot air balloon', 'airplane', 'tea kettle'];
+        function checkAnswer(choice){
+            if(choice.getAttribute('id') == 'airplane'){
+                alert('Correct!')
+            }
+            else {
+                alert('Sorry, try again!')
+            }
+        }
+
+        function demo(){
+            document.getElementById('gameStart').remove();
+            var list = document.createElement('ol');
+            var body = document.getElementById('left');
+            list.setAttribute('class', 'row');
+            list.setAttribute('id', 'advance');
+            body.appendChild(list);
+            for (var i = 0; i < 3; i++){
+                var audeme = document.createElement('li');
+                audeme.setAttribute('class', 'col-md-2');
+                list.appendChild(audeme);
+                var audio = document.createElement('audio');
+                audio.setAttribute('preload', 'auto');
+                audio.setAttribute('src', '../audio/'+array[i]+'.mp3');
+                audio.setAttribute('id', array[i]);
+                audeme.appendChild(audio);
+                var button = document.createElement('button');
+                button.setAttribute('onclick', 'document.getElementById("'+array[i]+'").play();');
+                button.setAttribute('tabindex', '0');
+                button.innerHTML = 'Play Sound';
+                audeme.appendChild(button);
+                var description = document.createElement('p');
+                description.innerHTML = 'Description: '+array[i];
+                description.setAttribute('tabindex', '0');
+                audeme.appendChild(description);
+            }
+            var listright = document.createElement('ol');
+            var right = document.getElementById('right');
+            var answerheading = document.createElement('h1');
+            answerheading.innerHTML = 'Answers';
+            right.appendChild(answerheading);
+            listright.setAttribute('class', 'row');
+            listright.setAttribute('id', 'advance');
+            right.appendChild(listright);
+            for (i = 0; i < 3; i++){
+                var answer = document.createElement('li');
+                answer.setAttribute('class', 'col-md-2');
+                listright.appendChild(answer);
+                var descriptionAnswer = document.createElement('p');
+                descriptionAnswer.innerHTML = 'Description: '+answers[i];
+                descriptionAnswer.setAttribute('tabindex', '0');
+                answer.appendChild(descriptionAnswer);
+                var buttonAnswer = document.createElement('button');
+                buttonAnswer.setAttribute('id', answers[i]);
+                buttonAnswer.setAttribute('onclick', 'checkAnswer('+buttonAnswer.getAttribute('id')+');');
+                buttonAnswer.setAttribute('tabindex', '0');
+                buttonAnswer.innerHTML = 'Choose';
+                answer.appendChild(buttonAnswer);
+            }
+        }
+    </script>
+
+</head>
+
+
+<body id="body">
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid text-center">
+        <div class="navbar-header">
+            <a class="navbar-brand logo" href="#">
+                <img id="logoimage" alt="logo" src="../images/Audeme-Logo-small3.png">
+            </a>
+        </div>
+        <ul class="nav navbar-nav tabs" role="tablist">
+            <li role="presentation" id="home"><a role="tab" tabindex="0" href="../index.html">Home</a></li>
+            <li role="presentation" id="dictionary"><a role="tab" tabindex="0" href="../search/dictionary.php">Dictionary</a></li>
+            <li role="presentation" id="game"><a role="tab" tabindex="0" href="#" >Games</a></li>
+            <li role="presentation" id="about"><a role="tab" tabindex="0" href="../about.html">About</a></li>
+        </ul>
+    </div>
+</nav>
+<?php
+echo '<p> gridgame test </p>';
+$servername = "localhost";
+$username = "";
+$password = "";
+$dbname = "audeme";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT name FROM gridgame";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "name: " . $row["name"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
+<div class="row">
+    <div class="col-sm-6 text-left" id="left">
+        <h1 class="audemeTitle" tabindex="0">Atomic Guessing Game</h1>
+        <p tabindex="0">Listen to the three atomic audemes and guess the concept they represent from the choices on the right</p>
+        <button onclick="demo()" class="customButton center" id="gameStart" tabindex="0">GAME START</button>
+    </div>
+    <div class="col-sm-6 text-left" id="right">
+
+    </div>
+</div>
+<!---
+    <div id="beforeGameStart" style="">
+        <div id="gameStartWrapper">
+            <h1 class="audemeTitle">Audeme Grids</h1>
+            <br>
+            <h3>Select number of players</h3>
+            <div style="text-align:left; width:200px; margin-top:20px;" class="center">
+              test   <form>
+                    <input type="radio" name="numberOfPlayers" value="1" id="onePlayer" checked>
+                    <label for="onePlayer">1 Player</label>
+                    <br>
+                    <input type="radio" name="numberOfPlayers" value="2" id="twoPlayer">
+                    <label for="twoPlayer">2 Players</label>
+                    <br>
+                    <input type="radio" name="numberOfPlayers" value="3" id="threePlayer">
+                    <label for="threePlayer">3 Players</label>
+
+                </form>
+            </div>
+            <button id="gameStartButton" class="customButton center">
+                <h1 id="gameStart">GAME START<h1></button>
+</div>
+</div>
+<div id="gameArea">
+
+<div id="panelWrapper">
+<div id="leftPart">
+    <div id="sceneTitle">
+        <h1 class="audemeTitle">Audeme Grids</h1>
+    </div>
+    <div id="sceneWrapper">
+            <canvas id="scene" height="500" width="600">
+Your browser can't view the HTML5 canvas element!
+</canvas>
+    </div>
+    <div id="controlPanelBottom">
+            <div class="controlButton" id="replay"></div>
+<div class="controlButton" id="remove"></div>
+<div class="controlButton" id="add"></div>
+
+
+            <div id="nextWrapper" class="customButton">
+                <h1 id="playNext" class="unclickable">NEXT</h1></div>
+            <div id="replayWrapper" class="customButton">
+                <h1 id="replay" class="unclickable">REPLAY</h1></div>
+
+        </div>
+        <div id="columns">
+            <div id="columns3" class="controlButton"></div>
+            <div id="columns4" class="controlButton"></div>
+            <div id="columns5" class="controlButton"></div>
+            <div id="columns6" class="controlButton"></div>
+        </div>
+    </div>
+    <div id="controlPanelRight">
+        <div id="scoreBoard">
+            <h1>SCORE</h1>
+            <h1 id="score1" class="scoreDigit">0</h1>
+<h1 id="score2" class="scoreDigit">0</h1>
+<h1 id="score3" class="scoreDigit">0</h1>
+        </div>
+        <div id="timer">
+            <h1 id="digit1" class="digit">3</h1>
+            <h1 id="digit2" class="digit">0</h1>
+        </div>
+
+        <div style="clear:both"></div>
+        <div id="revealAnswers">
+            <div id="answerWrapper" class="customButton">
+                <h1 id="answer"></h1></div>
+        </div>
+        <div style="clear:both"></div>
+        <div id="hints">
+            <div id="hintWrapper" class="customBotton">
+                <h1 id="hint">SHOW HINT</h1></div>
+            <p></p>
+        </div>
+        <div style="clear:both"></div>
+        <div id="descriptions">
+            <h1>DESCRIPTIONS</h1>
+            <P></P>
+        </div>
+        <div style="clear:both"></div>
+
+    </div>
+    </div>
+
+    <div id="endPanel">
+        <h2></h2>
+        <p>You have complete this round of game.</p>
+        <button id="gameRestart" class="customButtonSmall">Restart</button>
+        <button id="gameQuit" class="customButtonSmall">Quit</button>
+
+    </div>
+
+    <div id="bonus">
+        <h2>BONUS ROUND!</h2>
+        <p>Submit your answer to receive free points!</p>
+        <button id="bonusContinue" class="customButtonSmall">Continue</button>
+    </div>
+
+    <div id="audemeNameInput">
+        <h2>BONUS ROUND!</h2>
+        <p>Submit your answer for free points!</p>
+        <input type="text"></input>
+        <button id="audemeSubmit" class="customButtonSmall">SUBMIT</button>
+    </div>
+
+    <div id="timeOut">
+        <h2></h2>
+        <p>You have ran out of time! No points for this one.</p>
+        <button id="timeOutNext" class="customButtonSmall">OK</button>
+
+    </div>
+
+    <div id="answerConfirm">
+        <h2></h2>
+        <p>Were you correct?
+            <br>If so click ‘Yes’, if not, click ‘No’.</p>
+        <button id="answerYes" class="customButtonSmall">Yes</button>
+        <button id="answerNo" class="customButtonSmall">No</button>
+
+    </div>
+    </div>
+ <div id="tutorial1" class="tutorials">
+        <h2>TUTORIAL - 1 of 9</h2>
+        <div class="content">
+            <p>Welcome to the Audeme Grid Game, a game that tests your ability to think with your ears!</p>
+        </div>
+        <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
+        <button id="tutorialNext1" class="customButtonSmall">Next</button>
+
+    </div>
+
+    <div id="tutorial2" class="tutorials">
+        <h2>TUTORIAL 2 of 9</h2>
+        <div class="content">
+            <p>Each sound in the grid represents an abstract idea. For instance, the <strong>Liquid</strong> square can mean liquid, water, river, or fluid. </p>
+            <div id="tutorialPanel2" class="panelGrid hover-red color-grey">Liquid</div>
+            <p class="tutorialDescription" id="tutorialDescription2" style="visibility:hidden;">liquid, water, river, or fluid.</p>
+            <div style="clear:both"></div>
+        </div>
+        <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
+        <button id="tutorialNext2" class="customButtonSmall">Next</button>
+
+        <audio id="tutorialAudio2">
+            <source src="audio/8_water.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div id="tutorial3" class="tutorials">
+        <h2>TUTORIAL - 3 of 9</h2>
+        <div class="content">
+            <p>When these sounds are combined, they can be used to represent more specific ideas. Here’s what happens when we combine the <strong>Liquid</strong> square with the <strong>Machine</strong> square.</p>
+            <div id="panel31" class="panelGrid hover-red color-grey">Liquid</div>
+            <p class="tutorialDescription">+</p>
+            <div id="panel32" class="panelGrid hover-red color-grey">Machine</div>
+            <p class="tutorialDescription"> = Boat</p>
+
+            <div style="clear:both;"></div>
+        </div>
+        <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
+        <button id="tutorialNext3" class="customButtonSmall">Next</button>
+
+        <audio id="tutorialAudio31">
+            <source src="audio/8_water.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="tutorialAudio32">
+            <source src="audio/3_machine.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div id="tutorial4" class="tutorials">
+        <h2>TUTORIAL - 4 of 9</h2>
+        <div class="content">
+            <p>Here’s another example!</p>
+            <div id="panel41" class="panelGrid hover-red color-grey">Machine</div>
+            <p class="tutorialDescription">+</p>
+            <div id="panel42" class="panelGrid hover-red color-grey">Rising</div>
+            <p class="tutorialDescription">+</p>
+            <div id="panel43" class="panelGrid hover-red color-grey">Air</div>
+            <p class="tutorialDescription"> = Airplane</p>
+
+            <div style="clear:both;"></div>
+        </div>
+        <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
+        <button id="tutorialNext4" class="customButtonSmall">Next</button>
+
+        <audio id="tutorialAudio41">
+            <source src="audio/3_machine.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="tutorialAudio42">
+            <source src="audio/1_rising.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="tutorialAudio43">
+            <source src="audio/2_air.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div id="tutorial5" class="tutorials">
+        <h2>TUTORIAL - 5 of 9</h2>
+        <div class="content">
+            <p>Once the Audeme riddle plays, you have <span style="color:#f08c0f;">30</span> seconds to guess the correct answer. Once you’ve made your guess, click the <strong>SHOW ANSWER</strong> Button to reveal the correct answer.</p>
+            <img src="img/tutorial_showanswer.png">
+        </div>
+        <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
+        <button id="tutorialNext5" class="customButtonSmall">Next</button>
+
+    </div>
+
+    <div id="tutorial6" class="tutorials">
+        <h2>TUTORIAL - 6 of 9</h2>
+        <div class="content">
+            <p>You will then be asked if you were correct. Click <strong>yes</strong> if you guessed correctly, and <strong>no</strong> if you guessed incorrectly. For correct answers, you will be awarded 10 points for every square used. (Example, 3 sounds = 30 points)
+            </p>
+            <img src="img/tutorial_answerconfirm.png">
+            <p>If you run out of time, you will be awarded no points!</p>
+        </div>
+        <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
+        <button id="tutorialNext6" class="customButtonSmall">Next</button>
+
+    </div>
+
+    <div id="tutorial7" class="tutorials">
+        <h2>TUTORIAL 7 of 9</h2>
+        <div class="content">
+            <p>If you are stumped, you may click on <strong>HINT</strong> for a little help.
+                <br>
+            </p>
+            <img src="img/tutorial_hints.png">
+
+            <p>If you would like more complex Audeme riddles, you may increase the number of columns using the buttons below:</p>
+            <img src="img/tutorial_columns.png">
+
+        </div>
+        <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
+        <button id="tutorialNext7" class="customButtonSmall">Next</button>
+
+    </div>
+
+    <div id="tutorial8" class="tutorials">
+        <h2>TUTORIAL 8 of 9</h2>
+        <div class="content">
+            <p>Randomly throughout the game you will have <strong>Bonus Rounds</strong> where you may submit your guess for free points!</p>
+        </div>
+        <button id="" class="customButtonSmall skipTutorial">Skip Tutorial</button>
+        <button id="tutorialNext8" class="customButtonSmall">Next</button>
+
+    </div>
+
+    <div id="tutorial9" class="tutorials">
+        <h2>TUTORIAL 9 of 9</h2>
+        <div class="content">
+            <p>That’s it! Try to score as many points with 20 questions. Click <strong>Start</strong> when you are ready.
+            </p>
+        </div>
+        <button id="" class="customButtonSmall skipTutorial">Start</button>
+    </div>
+</body>
+
+</html>
