@@ -1,0 +1,401 @@
+AGRICULTURE,APPLIED SCIENCE,FOOD ANIMAL FARM PLANT CULTIVATE,Agriculture is the process of producing food feed fiber and other desired products by cultivation of certain plants and the raising of domesticated animals
+AIRPLANE,APPLIED SCIENCE,AERONAUTICS AVIATION FLY TECHNOLOGY ENGINEERING,is a powered fixed-wing aircraft that is propelled forward by thrust from a jet engine or propeller
+BREAKTHROUGH,APPLIED SCIENCE,IDEA INNOVATION DEVELOPMENT PROGRESS DISCOVERY SUCCESS, A sudden dramatic and important discovery or development.
+BUS,APPLIED SCIENCE,TRANSPORTATION VEHICLE PEOPLE PUBLIC TRAVEL, A large motor vehicle carrying passengers by road especially one serving the public on a fixed route and for a fare.
+CELESTIAL NAVIGATION,APPLIED SCIENCE,STAR TRAVEL SUN MOON,The action of finding one's way by observing the sun moon and stars.
+COMPUTER 1,APPLIED SCIENCE,PROCESS INFORMATION CALCULATION TECHNOLOGY, An electronic device for storing and processing data.
+COMPUTER 2,APPLIED SCIENCE,PROCESS INFORMATION CALCULATION TECHNOLOGY,An electronic device for storing and processing data.
+COMPUTER CRASH,APPLIED SCIENCE,TECHNOLOGY FAIL BREAK ERROR, A crash (or system crash) in computing is when a computer program stops functioning properly.
+DATA,APPLIED SCIENCE,TECHNOLOGY COMPUTER PROCESS INFORMATION,Facts and statistics collected together for reference or analysis
+DIGITAL,APPLIED SCIENCE,COMPUTER DATA INFORMATION TECHNOLOGY, Expressed as series of the digits 0 and 1 typically represented by values of a physical quantity such as voltage or magnetic polarization.
+ELECTRIC CAR,APPLIED SCIENCE,AUTOMOBILE MOTOR ELECTRIC RENEWABLE ENERGY,An automobile that is propelled by one or more electric motors using electrical energy stored in batteries or another energy storage device.
+HYPOTHESIS,APPLIED SCIENCE,SCIENCE IDEA THOUGHT, A supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation.
+IDEA 1,APPLIED SCIENCE,THOUGHT INFORMATION INTELLIGENCE SCIENCE,A thought or suggestion as to a possible course of action.
+IDEA 2,APPLIED SCIENCE,THOUGHT INFORMATION INTELLIGENCE SCIENCE, A thought or suggestion as to a possible course of action.
+INFORMATION,APPLIED SCIENCE,FACT LEARN EDUCATION INTELLIGENCE DATA,Facts provided or learned about something or someone.
+INNOVATION,APPLIED SCIENCE,THOUGHT IDEA THEORY INVENTION, Introduction of new things or methods.
+JUDGE,APPLIED SCIENCE,THOUGHT OPINION CONCLUSION, Form an opinion or conclusion about.
+KEY,APPLIED SCIENCE,IMPORTANT CRUCIAL,Of paramount or crucial importance.
+LAW,APPLIED SCIENCE,FACT SCIENCE TRUTH INFORMATION, A statement of fact deduced from observation to the effect that a particular natural or scientific phenomenon always occurs if certain conditions are present.
+MACHINE 1,APPLIED SCIENCE,TECHNOLOGY SYSTEM FUNCTION FACTORY, An apparatus using or applying mechanical power and having several parts each with a definite function and together performing a particular task.
+MACHINE 2,APPLIED SCIENCE,TECHNOLOGY SYSTEM FUNCTION FACTORY,An apparatus using or applying mechanical power and having several parts each with a definite function and together performing a particular task.
+MEDICINE,APPLIED SCIENCE,HEALTH CURE TREATMENT, The science or practice of the diagnosis treatment and prevention of disease.
+METEOROLOGY,APPLIED SCIENCE,WEATHER ATMOSPHERE,The branch of science concerned with the processes and phenomena of the atmosphere especially as a means of forecasting the weather.
+NANOTECHNOLOGY,APPLIED SCIENCE,TECHNOLOGY SMALL MICROSCOPIC,The branch of technology that deals with dimensions and tolerances of less than 100 nanometers especially the manipulation of individual atoms and molecules.
+OCEAN AQUACULTURE,APPLIED SCIENCE,FOOD AGRICULTURE FARM FISH, The farming of aquatic organisms such as fish shellfish and even plants in the ocean.
+QUESTION,APPLIED SCIENCE,INFORMATION IGNORANCE SCIENCE, A sentence worded or expressed so as to elicit information.
+RICHTER SCALE,APPLIED SCIENCE,TECHNOLOGY SEISMOGRAPH EARTHQUAKE PLATE TECTONICS, A numerical scale for expressing the magnitude of an earthquake on the basis of seismograph oscillations.
+SCALE,APPLIED SCIENCE,WEIGH MASS HEAVY LIGHT, A musical scale; an instrument or machine for weighing.
+STEAM ENGINE,APPLIED SCIENCE,EARTH SCIENCE VAPOR WATER MOISTURE STEAM ENERGY, An engine that converts the heat energy of pressurized steam into mechanical energy.
+STEAM TURBINE,APPLIED SCIENCE,EARTH SCIENCE VAPOR WATER MOISTURE STEAM ENERGY STEAM ENGINE,A turbine in which a high-velocity jet of steam rotates a bladed disk or drum.
+TELECOMMUNICATIONS,APPLIED SCIENCE,COMMUNICATION TELEGRAPH TELEPHONE BROADCAST TECHNOLOGY,Communication over a distance by cable telegraph telephone or broadcasting.
+THEORY,APPLIED SCIENCE,SCIENCE IDEA THOUGHT HYPOTHESIS, A supposition or a system of ideas intended to explain something especially one based on general principles independent of the thing to be explained.
+TRANSATLANTIC COMMUNICATION,APPLIED SCIENCE,TELECOMMUNICATION TELEGRAPH COMMUNICATION,An undersea cable running under the Atlantic Ocean used for telegraph communications.
+TRANSCONTINENTAL RAILROAD,APPLIED SCIENCE,TRAVEL TRAIN TRANSPORTATION TECHNOLOGY,A train route across the United States finished in 1869.
+TURBINE,APPLIED SCIENCE,HYDROELECTRIC ENERGY GENERATOR,A machine for producing continuous power in which a wheel or rotor typically fitted with vanes is made to revolve by a fast-moving flow of water steam gas air or other fluid.
+WATER WELL,APPLIED SCIENCE,WATER WELL WATER GROUNDWATER AQUIFER,An excavation or structure created in the ground by digging driving boring or drilling to access groundwater in underground aquifers.
+ASTEROID,ASTRONOMY,ROCK ORBIT OUTER SPACE SUN METEOR SOLAR SYSTEM,A small rocky body orbiting the sun.
+COMET,ASTRONOMY,ICE DUST ROCK GAS OUTER SPACE ORBIT,A celestial object consisting of a nucleus of ice and dust and when near the sun a “tail?of gas and dust particles pointing away from the sun.
+CONSTELLATION 1,ASTRONOMY,STAR OUTER SPACE GREAT BEAR URSA MAJOR,A group of stars forming a recognizable pattern that is traditionally named after its apparent form or identified with a mythological figure.
+CONSTELLATION 2,ASTRONOMY,STAR OUTER SPACE GREAT BEAR URSA MAJOR,A group of stars forming a recognizable pattern that is traditionally named after its apparent form or identified with a mythological figure.
+GALAXY,ASTRONOMY,STARS OUTER SPACE GRAVITY,A large system of stars held together by mutual gravitation and isolated from similar systems by vast regions of space.
+ORBIT,ASTRONOMY,REVOLUTION OUTER SPACE REVOLVE GRAVITY, The curved path of a celestial object or spacecraft around a star planet or moon especially a periodic elliptical revolution.
+OUTER SPACE,ASTRONOMY,OUTER SPACE UNIVERSE GALAXY CONSTELLATION,The physical universe beyond the earth's atmosphere.
+PLANET,ASTRONOMY,SOLAR SYSTEM ROCK OUTER SPACE,Also called major planet. any of the eight large heavenly bodies revolving about the sun and shining by reflected light.
+PLANET EARTH,ASTRONOMY,SOLAR SYSTEM OUTER SPACE,The planet on which we live; the world.
+PLANET JUPITER,ASTRONOMY,SOLAR SYSTEM OUTER SPACE,The planet fifth in order from the sun it is the largest planet in the solar system.
+PLANET MARS,ASTRONOMY,SOLAR SYSTEM OUTER SPACE,The planet fourth in order from the sun name derived from the ancient Roman god of war.
+PLANET MERCURY,ASTRONOMY,SOLAR SYSTEM OUTER SPACE,The planet nearest the sun the smallest planet in the solar system named after the Roman god who served as a messenger.
+PLANET NEPTUNE,ASTRONOMY,SOLAR SYSTEM OUTER SPACE,The planet eighth in order from the sun named after the ancient Roman god of the sea.
+PLANET SATURN,ASTRONOMY,SOLAR SYSTEM OUTER SPACE,The planet sixth in order from the sun encompassed by rings.
+PLANET URANUS,ASTRONOMY,SOLAR SYSTEM OUTER SPACE,The planet seventh in order from the sun a gas giant.
+PLANET VENUS,ASTRONOMY,SOLAR SYSTEM OUTER SPACE,The planet second in order from the sun named after the Roman goddess of love and beauty.
+STAR,ASTRONOMY,OUTER SPACE UNIVERSE GALAXY CONSTELLATION,A fixed luminous point in the night sky that is a large remote incandescent body like the sun.
+THE MOON,ASTRONOMY,SATELLITE ROCK NIGHT, The natural satellite of the earth visible by reflected light from the sun.
+AMPHIBIAN,BIOLOGY,ANIMAL FROG TETRAPOD AQUATIC CLASS, A cold-blooded vertebrate animal of a class that comprises the frogs toads newts and salamanders. They are distinguished by having an aquatic gill-breathing larval stage followed (typically) by a terrestrial lung-breathing adult stage.
+ANIMAL WASTE,BIOLOGY,FECES GUANO URINE BIOMASS MANURE METABOLIC, A material composed of excreta with or without bedding materials and/or animal drugs collected from poultry ruminants or other animals except humans.
+ANIMALS,BIOLOGY,SPECIES CLASS GENUS ORGANISM ZOOLOGY KINGDOM,A living organism that feeds on organic matter typically having specialized sense organs and nervous system and able to respond rapidly to stimuli.
+BACTERIA,BIOLOGY,ILLNESS MICROORGANISM PARASITIC ANTIBIOTICS, A member of a large group of unicellular microorganisms that have cell walls but lack organelles and an organized nucleus including some that can cause disease.
+BIODIVERSITY,BIOLOGY,CHAIN REACTION LIFE ECOSYSTEM ORGANISMS HABITAT ANIMAL, The variety of life in the world or in a particular habitat or ecosystem.
+BIOME,BIOLOGY,ECOSYSTEM PLANT ANIMAL WEATHER CLIMATE GEOGRAPHY ECOLOGY,A large naturally occurring community of plants and animals occupying a major habitat.
+BIRDS,BIOLOGY,ANIMAL FLY FLIGHT WING, A warm-blooded egg-laying vertebrate distinguished by the possession of feathers wings and a beak and (typically) by being able to fly.
+BREATHE,BIOLOGY,INHALE LUNG AIR, Take air into the lungs and then expel it especially as a regular physiological process.
+CARNIVORE,BIOLOGY,ANIMAL MEAT CONSUMER FOOD FLESH,An animal that feeds on flesh.
+CELL,BIOLOGY,LIFE MICROORGANISM PROTOPLASM,The smallest structural and functional unit of an organism.
+CIRCADIAN RHYTHM 1,BIOLOGY,SLEEP DAY NIGHT CLOCK,Any biological process that displays an endogenous entrainable oscillation of about 24 hours
+CIRCADIAN RHYTHM 2,BIOLOGY,SLEEP DAY NIGHT CLOCK,Any biological process that displays an endogenous entrainable oscillation of about 24 hours.
+CONSUMER,BIOLOGY,ORGANISM FOOD EAT CARNIVORE,Consumers are organisms of an ecological food chain that receive energy by consuming other organisms.
+DINOSAUR 1,BIOLOGY,ANIMAL REPTILE ANCIENT EXTINCT FOSSIL PALEONTOLOGY, Reptile of the Mesozoic era often reaching an enormous size.
+DINOSAUR 2,BIOLOGY,ANIMAL REPTILE ANCIENT EXTINCT FOSSIL PALEONTOLOGY,Reptile of the Mesozoic era often reaching an enormous size.
+DNA 1`,BIOLOGY,CHROMOSOME GENETICS ORGANISM CELL, Deoxyribonucleic acid a self-replicating material present in nearly all living organisms as the main constituent of chromosomes. It is the carrier of genetic information
+DNA 2,BIOLOGY,CHROMOSOME GENETICS ORGANISM CELL,Deoxyribonucleic acid a self-replicating material present in nearly all living organisms as the main constituent of chromosomes. It is the carrier of genetic information.
+ECOSYSTEM,BIOLOGY,ANIMAL COMMUNITY ENVIRONMENT BIOME ECOLOGY,A biological community of interacting organisms and their physical environment.
+ENTOMOLOGY,BIOLOGY,INSECT ZOOLOGY,The branch of zoology concerned with the study of insects.
+EVOLUTION,BIOLOGY,CHANGE ANIMAL METAMORPHOSIS,The process by which different kinds of living organisms are thought to have developed and diversified from earlier forms during the history of the earth.
+FOOD CHAIN,BIOLOGY,ORGANISM EAT ECOLOGY BIOME,Hierarchical series of organisms each dependent on the next as a source of food.
+FOOD ENERGY,BIOLOGY,FOOD EAT ENERGY DIGESTION,Energy that animals (including humans) derive from their food.
+FOOD WEB,BIOLOGY,ECOLOGY FOOD CHAIN CONSUMER BIOME,A system of interlocking and interdependent food chains.
+GENETICS,BIOLOGY,DNA HEREDITY FAMILY REPRODUCTION,the study of heredity and the variation of inherited characteristics
+GILLS,BIOLOGY,FISH ANIMAL AMPHIBIAN BREATHE RESPIRATION,The paired respiratory organ of fishes and some amphibians
+HEAT OR CORE 1,BIOLOGY,ANATOMY CENTER CORE INSIDE,"A hollow muscular organ that pumps the blood through the circulatory system by rhythmic contraction and dilation. Audeme can also mean ""Core""."
+HEAT OR CORE 2,BIOLOGY,ANATOMY CENTER CORE INSIDE,"A hollow muscular organ that pumps the blood through the circulatory system by rhythmic contraction and dilation. Audeme can also mean ""Core""."
+HEART TRANSPLANT,BIOLOGY,ANATOMY SURGERY ORGAN, A heart transplant is an operation in which a failing diseased heart is replaced with a healthier donor heart.
+HYPERVENTILATE,BIOLOGY,BREATHE AIR OXYGEN CARBON DIOXIDE,Breathe or cause to breathe at an abnormally rapid rate so increasing the rate of loss of carbon dioxide.
+ILLNESS,BIOLOGY,UNHEALTHY CONDITION POOR HEALTH INDISPOSITION SICKNESS,Affected by physical or mental illness.
+INFECTION,BIOLOGY,SICK ILLNESS BACTERIA DISEASE GERM VIRUS PARASITE,A disease caused by germs that enter the body
+INSECTS,BIOLOGY,ANIMAL SMALL BUG,A small arthropod animal that has six legs and generally one or two pairs of wings
+MICROORGANISM,BIOLOGY,SMALL ORGANISM GERM VIRUS FUNGUS,A microscopic organism especially a bacterium virus or fungus.
+MUSHROOM,BIOLOGY,FUNGUS MOLD MYCOLOGY, A fungal growth that typically takes the form of a domed cap on a stalk often with gills on the underside of the cap
+PET ALLERGY,BIOLOGY,ALLERGY ANIMAL DOMESTICATED, An allergic reaction to proteins found in an animal's skin cells saliva or urine.
+PLANKTON,BIOLOGY,CREATURE ANIMAL ORGANISM SEDIMENT, The small and microscopic organisms drifting or floating in the sea or fresh water.
+POISONOUS SNAKE,BIOLOGY,VENOMOUS REPTILE SERPENT POISON INFECT, Venomous snakes are species of suborder Serpents that are capable of producing venom which is used primarily for immobilizing prey and defense mostly via mechanical injection by fangs.
+PRODUCER,BIOLOGY,FOOD PLANT PHOTOSYNTHESIS,Organisms that can make their own energy through biochemical processes
+RADIOACTIVE DECAY,BIOLOGY,ROT DECOMPOSE BREAK DOWN RADIOACTIVE,Also known as nuclear decay or radioactivity is the process by which a nucleus of an unstable atom loses energy by emitting ionizing radiation.
+REPTILE,BIOLOGY,ANIMAL,A cold-blooded vertebrate of a class that includes snakes lizards crocodiles turtles and tortoises.
+SPECIES,BIOLOGY,ANIMAL ORGANISM GENETIC ,A group of living organisms consisting of similar individuals capable of exchanging genes or interbreeding.
+VIRUS,BIOLOGY,ILLNESS DISEASE SICKNESS INFECTION, An infective agent that is able to multiply only within the living cells of a host.
+WHALE,BIOLOGY,ANIMAL HUGE MARINE SEA,A very large marine mammal.
+AIR 1,EARTH SCIENCE,ATMOSPHERE WIND GAS OXYGEN BREATHE,The invisible gaseous substance surrounding the earth a mixture mainly of oxygen and nitrogen.
+AIR 2,EARTH SCIENCE,ATMOSPHERE WIND GAS OXYGEN BREATHE,The invisible gaseous substance surrounding the earth a mixture mainly of oxygen and nitrogen.
+AIR 3,EARTH SCIENCE,ATMOSPHERE WIND GAS OXYGEN BREATHE,The invisible gaseous substance surrounding the earth a mixture mainly of oxygen and nitrogen.
+AIR PRESSURE,EARTH SCIENCE,ATMOSPHERE PRESSURE WEIGHT AIR FORCE,Atmospheric pressure is the force per unit area exerted on a surface by the weight of air above that surface in the atmosphere of Earth.
+BLIZZARD,EARTH SCIENCE,COLD STORM SNOW WIND WEATHER,A severe snowstorm with high winds and low visibility.
+DESERT,EARTH SCIENCE,LAND TERRAIN DRY SAND HOT WEATHERING,A barren area of land where little precipitation occurs and consequently living conditions are hostile for plant and animal life.
+DUST STORM,EARTH SCIENCE,DESERT STORM DUST SAND, A strong turbulent wind that carries clouds of fine dust soil and sand over a large area.
+EARTH,EARTH SCIENCE,LAND TERRAIN DIRT ROCK GROUND,The substance of the land surface; soil.
+EARTH WAVE,EARTH SCIENCE,VIBRATION EARTHQUAKE SEISMIC,An elastic vibration of the material of the earth.
+FLOOD,EARTH SCIENCE,NATURAL DISASTER WATER OVERFLOW, An overflowing of a large amount of water beyond its normal confines especially over what is normally dry land.
+GEOTHERMAL,EARTH SCIENCE,HEAT EARTH UNDERGROUND SUBTERRANEAN,Of relating to or produced by the internal heat of the earth.
+GLACIER 1,EARTH SCIENCE,ICE COLD SNOW,A slowly moving mass or river of ice formed by the accumulation and compaction of snow on mountains or near the poles.
+GLACIER 2,EARTH SCIENCE,ICE COLD SNOW,A slowly moving mass or river of ice formed by the accumulation and compaction of snow on mountains or near the poles.
+GLACIER 3,EARTH SCIENCE,ICE COLD SNOW, A slowly moving mass or river of ice formed by the accumulation and compaction of snow on mountains or near the poles.
+GROUND WATER,EARTH SCIENCE,WATER SUBTERRANEAN UNDERGROUND, Groundwater is the water located beneath the earth's surface in soil pore spaces and in the fractures of rock formations.
+HYDROPOWER,EARTH SCIENCE,WATER GRAVITY ELECTRICITY POWER HYDROELECTRICITY,Hydroelectric power.
+INNER CORE 1,EARTH SCIENCE,GEOLOGY NICKEL UNDERGROUND,Earth's inner core is Earth's innermost part and is a primarily solid ball.
+INNER CORE 2,EARTH SCIENCE,GEOLOGY NICKEL UNDERGROUND,Earth's inner core is Earth's innermost part and is a primarily solid ball.
+MAGMA,EARTH SCIENCE,LAVA GEOLOGY HOT,Hot fluid or semifluid material below or within the earth's crust from which lava and other igneous rock is formed by cooling.
+MARSH,EARTH SCIENCE,BOG SWAMP TERRAIN LAND, An area of low-lying land that is flooded in wet seasons or at high tide and typically remains waterlogged at all times.
+METAL,EARTH SCIENCE,SOLID GEOLOGY,A solid material that is typically hard shiny malleable fusible and ductile with good electrical and thermal conductivity.
+MOUNTAIN,EARTH SCIENCE,LAND ELEVATION TERRAIN,A large natural elevation of the earth's surface rising abruptly from the surrounding level.
+MUDSLIDE,EARTH SCIENCE,MUD MASS MOVEMENT GRAVITY,A mass of mud and other earthy material that is falling or has fallen down a hillside or other slope.
+NATURAL GAS,EARTH SCIENCE,FUEL ENERGY,Flammable gas consisting largely of methane and other hydrocarbons occurring naturally underground (often in association with petroleum) and used as fuel.
+NATURE,EARTH SCIENCE,NATURAL GRACE BEAUTY EARTH,The phenomena of the physical world collectively including plants animals the landscape and other features and products of the earth
+OIL 1,EARTH SCIENCE,PETROLEUM TRANSPORTATION FOSSIL FUEL,A viscous liquid derived from petroleum especially for use as a fuel or lubricant.
+OIL 2,EARTH SCIENCE,PETROLEUM TRANSPORTATION FOSSIL FUEL,A viscous liquid derived from petroleum especially for use as a fuel or lubricant.
+OUTER CORE 1,EARTH SCIENCE,EARTH CORE GEOLOGY,A liquid layer about 2300 km (1400 mi) thick composed of iron and nickel.
+OUTER CORE 2,EARTH SCIENCE,EARTH CORE GEOLOGY,A liquid layer about 2300 km (1400 mi) thick composed of iron and nickel.
+PEAT,EARTH SCIENCE,SWAMP MARSH BOG FUEL, A brown soil-like material characteristic of boggy acid ground consisting of partly decomposed vegetable matter. It is widely cut and dried for use in gardening and as fuel.
+PETROLEUM,EARTH SCIENCE,OIL FUEL GASOLINE TRANSPORTATION FOSSIL FUEL,A liquid mixture of hydrocarbons that is present in certain rock strata and can be extracted and refined to produce fuels including gasoline kerosene and diesel oil; oil.
+PLATE TECTONICS 1,EARTH SCIENCE,LITHOSPHERE CRUST EARTHQUAKE FAULT LINE,A scientific theory that describes the large-scale motion of Earth's lithosphere.
+PLATE TECTONICS 2,EARTH SCIENCE,LITHOSPHERE CRUST EARTHQUAKE FAULT LINE,A scientific theory that describes the large-scale motion of Earth's lithosphere.
+POLLUTION 1 ,EARTH SCIENCE,DIRT IMPURITY SMOG POISON ATMOSPHERE,The presence in or introduction into the environment of a substance or thing that has harmful or poisonous effects.
+POLLUTION 2,EARTH SCIENCE,DIRT IMPURITY SMOG POISON ATMOSPHERE,The presence in or introduction into the environment of a substance or thing that has harmful or poisonous effects.
+SAND DUNE,EARTH SCIENCE,SAND DESERT GEOGRAPHY,A dune is a hill of sand built by either wind or water flow.
+SAND STORM 1,EARTH SCIENCE,SAND DESERT GEOGRAPHY STORM DUST,A windstorm especially in a desert that blows along great clouds of sand.
+SAND STORM 2,EARTH SCIENCE,SAND DESERT GEOGRAPHY STORM DUST,A windstorm especially in a desert that blows along great clouds of sand.
+SEA,EARTH SCIENCE,WATER OCEAN ,The expanse of salt water that covers most of the earth's surface and surrounds its landmasses.
+SEISMIC WAVE,EARTH SCIENCE,VIBRATION EARTHQUAKE SEISMIC,A wave that travels through the Earth often as the result of an earthquake or explosion.
+SEISMOGRAPH,EARTH SCIENCE,EARTHQUAKE EARTH PLATE TECTONICS FAULT LINE,An instrument that measures and records details of earthquakes such as force and duration.
+STEAM 1,EARTH SCIENCE,VAPOR WATER MOISTURE ENERGY,The vapor into which water is converted when heated.
+STEAM 2,EARTH SCIENCE,VAPOR WATER MOISTURE ENERGY,The vapor into which water is converted when heated.
+STEAM 3,EARTH SCIENCE,VAPOR WATER MOISTURE ENERGY,The vapor into which water is converted when heated.
+STORM 1,EARTH SCIENCE,ATMOSPHERE WEATHER SEVERE WEATHER PRECIPITATION,A violent disturbance of the atmosphere with strong winds and usually rain thunder lightning or snow.
+STORM 2,EARTH SCIENCE,ATMOSPHERE WEATHER SEVERE WEATHER PRECIPITATION,A violent disturbance of the atmosphere with strong winds and usually rain thunder lightning or snow.
+SUNLIGHT 1,EARTH SCIENCE,LIGHT PHOTON ENERGY, Light from the sun.
+SUNLIGHT 2 ,EARTH SCIENCE,LIGHT PHOTON ENERGY, Light from the sun.
+TIDAL WAVE,EARTH SCIENCE,TSUNAMI TIDE WAVE OCEAN EARTHQUAKE DISASTER,An exceptionally large ocean wave especially one caused by an underwater earthquake or volcanic eruption.
+TIDE 1,EARTH SCIENCE,WAVE OCEAN SEA GRAVITY,The regular upward and downward movement of the level of the ocean that is caused by the pull of the Sun and the Moon on the Earth.
+TIDE 2,EARTH SCIENCE,WAVE OCEAN SEA GRAVITY,The regular upward and downward movement of the level of the ocean that is caused by the pull of the Sun and the Moon on the Earth.
+TORNADO ,EARTH SCIENCE,NATURAL DISASTER WIND STORM VORTEX,A mobile destructive vortex of violently rotating winds having the appearance of a funnel-shaped cloud and advancing beneath a large storm system.
+TSUNAMI,EARTH SCIENCE,NATURAL DISASTER TIDAL WAVE FLOOD SEA OCEAN ,A long high sea wave caused by an earthquake submarine landslide or other disturbance.
+VOLCANO 1,EARTH SCIENCE,MOUNTAIN LAVA HEAT ERUPTION, A mountain or hill typically conical having a crater or vent through which lava rock fragments hot vapor and gas are being or have been erupted from the earth's crust.
+VOLCANO 2,EARTH SCIENCE,MOUNTAIN LAVA HEAT ERUPTION, A mountain or hill typically conical having a crater or vent through which lava rock fragments hot vapor and gas are being or have been erupted from the earth's crust.
+WATER CYCLE 1,EARTH SCIENCE,CYCLE EVAPORATION CONDENSATION WEATHER ATMOSPHERE TRANSPIRATION ,The cycle of processes by which water circulates between the earth's oceans atmosphere and land involving precipitation as rain and snow drainage in streams and rivers and return to the atmosphere by evaporation and transpiration.
+WATER CYCLE 2,EARTH SCIENCE,CYCLE EVAPORATION CONDENSATION WEATHER ATMOSPHERE TRANSPIRATION ,The cycle of processes by which water circulates between the earth's oceans atmosphere and land involving precipitation as rain and snow drainage in streams and rivers and return to the atmosphere by evaporation and transpiration.
+WATERFALL,EARTH SCIENCE,WATER RIVER RAPIDS GRAVITY,A cascade of water falling from a height formed when a river or stream flows over a precipice or steep incline.
+WEATHER,EARTH SCIENCE,ATMOSPHERE TEMPERATURE MOISTURE ATMOSPHERIC PRESSURE,The state of the atmosphere with respect to wind temperature cloudiness moisture pressure etc. A clashing of fronts.
+WIND 1,EARTH SCIENCE,AIR ATMOSPHERE, The perceptible natural movement of the air.
+WIND 2,EARTH SCIENCE,AIR ATMOSPHERE, The perceptible natural movement of the air.
+ATOMIC ENERGY 1,ENERGY,ATOM ENERGY NUCLEAR REACTION RADIOACTIVE,Energy produced by atoms.
+ATOMIC ENERGY 2,ENERGY,ATOM ENERGY NUCLEAR REACTION RADIOACTIVE,Energy produced by atoms.
+BIOMASS 1,ENERGY,RENEWABLE ENEGY PLANT ANIMAL WASTE HEAT BIOFUEL, Plant material vegetation or agricultural waste used as a fuel or energy source.
+BIOMASS 2,ENERGY,RENEWABLE ENEGY PLANT NIMAL WASTE HEAT BIOFUEL, Plant material vegetation or agricultural waste used as a fuel or energy source.
+BIOMASS 3,ENERGY,RENEWABLE ENEGY PLANT NIMAL WASTE HEAT BIOFUEL, Plant material vegetation or agricultural waste used as a fuel or energy source.
+CHEAP ENERGY,ENERGY,INEXPENSIVE RENEWABLE, Energy that is inexpensive to produce or renewable.
+CLEAN ENERGY,ENERGY,INEXPENSIVE RENEWABLE ENVIRONMENT,Energy as electricity or nuclear power that does not pollute the atmosphere when used.
+ELECTRIC ENERGY,ENERGY,CHARGE ELECTRICITY POWER,Energy made available by the flow of electric charge through a conductor.
+ELECTRICITY,ENERGY,CHARGE ELECTRON PROTON POWER, A form of energy resulting from the existence of charged particles either statically as an accumulation of charge or dynamically as a current.
+ENERGY 1,ENERGY,POWER ELECTRICITY GENERATOR PHYSICS,Power derived from the utilization of physical or chemical resources especially to provide light and heat or to work machines.
+ENERGY 2,ENERGY,POWER ELECTRICITY GENERATOR PHYSICS, Power derived from the utilization of physical or chemical resources especially to provide light and heat or to work machines.
+ENERGY 3,ENERGY,POWER ELECTRICITY GENERATOR PHYSICS, Power derived from the utilization of physical or chemical resources especially to provide light and heat or to work machines.
+GEOTHERMAL ENERGY,ENERGY,HEAT EARTH UNDERGROUND SUBTERRANEAN ENERGY,Thermal energy generated and stored in the Earth.
+HYDROELECTRICITY 1,ENERGY,WATER GRAVITY ELECTRICITY POWER,Hydroelectricity is the term referring to electricity generated by hydropower; the production of electrical power through the use of the gravitational force of falling or flowing water.
+HYDROELECTRICITY 2,ENERGY,WATER GRAVITY ELECTRICITY POWER,Hydroelectricity is the term referring to electricity generated by hydropower; the production of electrical power through the use of the gravitational force of falling or flowing water.
+RENEWABLE ENERGY,ENERGY,SUSTAINABLE LIMITLESS,Energy from a source that is not depleted when used such as wind or solar power.
+SOLAR CELL,ENERGY,SUN LIGHT ELECTRICITY SOLAR ENERGY,A device converting solar radiation into electricity.
+SOLAR ENERGY 1,ENERGY,SUN LIGHT ELECTRICITY RENEWABLE ENERGY SUSTAINABLE,Radiant energy emitted by the sun.
+SOLAR ENERGY 2,ENERGY,SUN LIGHT ELECTRICITY RENEWABLE ENERGY SUSTAINABLE,Radiant energy emitted by the sun.
+SOLAR ENERGY 3,ENERGY,SUN LIGHT ELECTRICITY RENEWABLE ENERGY SUSTAINABLE,Radiant energy emitted by the sun.
+STEAM ENERGY ,ENERGY,EARTH SCIENCE VAPOR WATER MOISTURE STEAM ENGINE,The heat energy of pressurized steam.
+WAVE ENERGY 1,ENERGY,WAVE WATER OCEAN TURBINE RENEWABLE ENERGY,Energy obtained by harnessing wave power.
+WAVE ENERGY 2,ENERGY,WAVE WATER OCEAN TURBINE RENEWABLE ENERGY,Energy obtained by harnessing wave power.
+WIND ENERGY 1,ENERGY,RENEWABLE ENERGY WINDMILL WIND FARM TURBINE ELECTRICITY,The energy extracted from wind using wind turbines to produce electrical power.
+WIND ENERGY 2,ENERGY,RENEWABLE ENERGY WINDMILL WIND FARM TURBINE ELECTRICITY,The energy extracted from wind using wind turbines to produce electrical power.
+WIND FARM,ENERGY,SEDIMENT RENEWABLE ENERGY WINDMILL WIND ENERGY, An area of land with a group of energy-producing windmills or wind turbines.
+WINDMILL,ENERGY,RENEWABLE ENERGY WIND ENERGY,A building with sails or vanes that turn in the wind and generate power to grind grain into flour.
+AWAKEN ,GENERAL,MORNING DAY SLEEP DREAM ,To rouse from sleep to stop sleeping.
+BAD 1,GENERAL,EVIL WRONG NEGATIVE AWFUL SICK UNFORTUNATE,Of poor quality; inferior or defective. Unpleasant or unwelcome.
+BAD 2,GENERAL,EVIL WRONG NEGATIVE AWFUL SICK UNFORTUNATE,Of poor quality; inferior or defective. Unpleasant or unwelcome.
+BEAUTIFUL,GENERAL,GOOD PRETTY WONDERFUL FORTUNATE ATTRACTIVE APPEALING,Pleasing the senses or mind aesthetically.
+BIG,GENERAL,LARGE HUGE GIGANTIC SIZE, Of considerable size extent or intensity.
+BIG OVER TIME,GENERAL,LARGE HUGE GIGANTIC CLOCK CENTURY, To become large over time or a large amount of time.
+BREAK ,GENERAL,DESTROY CRASH BROKEN DESTRUCTION, Separate or cause to separate into pieces as a result of a blow shock or strain
+BREAKFAST,GENERAL,MORNING FOOD EARLY EAT,A meal eaten in the morning the first of the day.
+CHANGE OR ALTER,GENERAL,ALTER MODIFY EVOLVE DIFFERENT,Make or become different.
+BIG CHANGE,GENERAL,LARGE ALTER DIFFERENCE HUGE , A large change.
+CHEAP  ,GENERAL,MONEY INEXPENSIVE COIN,Costing very little low in price.
+CHESS,GENERAL,GAME STRATEGY SMART INTELLIGENT THINK,A board game of strategic skill for two players
+CLEAN  ,GENERAL,HYGIENE CLEAR PURE,Free of dirt impurities or extraneous matter
+CLOSE,GENERAL,NEAR PLACE SPACE DISTANCE, A short distance away or apart
+CLOTH,GENERAL,CLOTHING TEAR COTTON POLYESTER RIP,Woven or felted fabric made from wool cotton or a similar fiber.
+COLD,GENERAL,TEMPERATURE CHILLY ICE SNOW FREEZE,Of or at a low or relatively low temperature
+COMMUNICATION,GENERAL,TALK PHONE CALL INFORMATION,The imparting or exchanging of information or news
+CONSTRUCTION 1,GENERAL,BUILD CREATE ARCHITECT DESIGN FACTORY PRODUCTION,The building of something typically a large structure.
+CONSTRUCTION 2,GENERAL,BUILD CREATE ARCHITECT DESIGN FACTORY PRODUCTION,The building of something typically a large structure.
+CYCLE,GENERAL,EVENT REPEAT CIRCLE SPIN,A series of events that are regularly repeated in the same order.
+DEATH ,GENERAL,LIFE END CONCLUSION,The action or fact of dying or being killed; the end of the life of a person or organism.
+DECELERATE,GENERAL,SPEED VELOCITY MOTIN SLOW,Reduce speed; slow down
+DECREASING ,GENERAL,SIZE AMOUNT FEWER SMALLER REDUCE,Make or become smaller or fewer in size amount intensity or degree.
+DESCEND 1,GENERAL,DOWN LOWER LEVEL MOVE FALL,Move or fall downward.
+DESCEND 2,GENERAL,DOWN LOWER LEVEL MOVE FALL,Move or fall downward.
+DISTROY 1,GENERAL,BREAK DEMOLISH NEUTRALIZE,To render ineffective or useless; nullify; neutralize; invalidate.
+DISTROY 2,GENERAL,BREAK DEMOLISH NEUTRALIZE,To render ineffective or useless; nullify; neutralize; invalidate.
+DISTANCE 1,GENERAL,SPACE LENGTH FAR,An amount of space between two things or people.
+DISTANCE 2,GENERAL,SPACE LENGTH FAR,An amount of space between two things or people.
+DRINK,GENERAL,CONSUME WATER LIQUID,Take (a liquid) into the mouth and swallow
+EARLY,GENERAL,TIME MORNING,Near the beginning of a course process or series.
+EPIC,GENERAL,SIGNIFICANT IMPORTANT,Extending beyond the usual or ordinary especially in size or scope.
+ETERNITY 1,GENERAL,TIME INFINITE UNENDING,Infinite or unending time
+ETERNITY 2,GENERAL,TIME INFINITE UNENDING,Infinite or unending time
+EXPENSIVE,GENERAL,MONEY COIN LUXURY COST,Costing a lot of money.
+FADING,GENERAL,FAINT DISAPPEAR DIM WANE ,Gradually grow faint and disappear.
+FALL,GENERAL,DOWN MOVE GRAVITY,Move downward typically rapidly and freely without control from a higher to a lower level
+FAR,GENERAL,DISTANCE PLACE AWAY,At to or by a great distance
+FAST FOOD,GENERAL,FOOD EAT RESTAURANTS,Food that can be prepared quickly and easily and is sold in restaurants and snack bars as a quick meal or to be taken out.
+FIGHT 1,GENERAL,VIOLENCE OPPOSITION COMPETE,Take part in a violent struggle involving the exchange of physical blows or the use of weapons.
+FIGHT 2,GENERAL,VIOLENCE OPPOSITION COMPETE,Take part in a violent struggle involving the exchange of physical blows or the use of weapons.
+FLY,GENERAL,BIRD UP AIR SOAR, Move or be hurled quickly through the air.
+FOOD,GENERAL,EAT NUTRITION CONSUME,Any nutritious substance that people or animals eat or drink or that plants absorb in order to maintain life and growth
+FUN,GENERAL,EXCITING ENGAGING GAME PARTY ENJOYMENT PLEASURE,Enjoyment amusement or lighthearted pleasure
+FUTURE 1,GENERAL,TOMORROW TIME LATER,The day following today.
+FUTURE 2,GENERAL,TOMORROW TIME LATER,The day following today.
+GRACEFUL,GENERAL,NATURE NATURAL FLOW BEAUTY,Having or showing grace or elegance.
+HEAT 1,GENERAL,TEMPERATURE HOT FIRE FLAME WARM,The quality of being hot; high temperature
+HEAT 2,GENERAL,TEMPERATURE HOT FIRE FLAME WARM,The quality of being hot; high temperature
+HEAT 3,GENERAL,TEMPERATURE HOT FIRE FLAME WARM,The quality of being hot; high temperature
+HOVER,GENERAL,OVERHEAD UP ABOVE FLOAT,Remain in one place in the air.
+HYGIENE,GENERAL,CLEAN BODY HEALTH, Conditions or practices conducive to maintaining health and preventing disease especially through cleanliness.
+INCREASING,GENERAL,NUMBER SIZE GREATER BIGGER CHANGE,Become or make greater in size amount intensity or degree.
+INSIDE 1,GENERAL,IN WITHIN,The inner part; the interior.
+INSIDE 2,GENERAL,IN WITHIN,The inner part; the interior.
+LATE ,GENERAL,TIME END, Toward the end of a period.
+MONEY 1,GENERAL,CASH ECONOMY BANK TREASURY,A current medium of exchange in the form of coins and banknotes; coins and banknotes collectively.
+MONEY 2,GENERAL,CASH ECONOMY BANK TREASURY,A current medium of exchange in the form of coins and banknotes; coins and banknotes collectively.
+MULTIPLY,GENERAL,INCREASE SPREAD REPRODUCE,Increase or cause to increase greatly in number or quantity.
+NAP,GENERAL,SLEEP REST, Sleep lightly or briefly especially during the day.
+OLD,GENERAL,TIME LATE ELDER,Having lived for a long time.
+OUTSIDE,GENERAL,EXTERIOR BEYOND OUT EXTERNAL ,The external side or surface of something.
+PAIN,GENERAL,SUFFERING HURT ILLNESS INJURY DISEASE SICK,Physical suffering or discomfort caused by illness or injury.
+PEOPLE,GENERAL,POPULATION CIVILIZATION CULTURE,Human beings in general or considered collectively.
+PETS,GENERAL,ANIMAL DOMESTIC,A domestic or tamed animal or bird kept for companionship or pleasure and treated with care and affection.
+PROCESS,GENERAL,WORK SCIENCE ACTION ,A series of actions or steps taken in order to achieve a particular end.
+PROLONGED,GENERAL,TIME ETERNITY FUTURE CONSTANT LENGTHY,Continuing for a long time or longer than usual; lengthy.
+QUICK 1,GENERAL,MOVEMENT FAST SPEED,Moving fast or doing something in a short time.
+QUICK 2,GENERAL,MOVEMENT FAST SPEED,Moving fast or doing something in a short time.
+RACING,GENERAL,MOVEMENT FAST SPEED SWIFT,Moving swiftly.
+RADIO ,GENERAL,SIGNAL TRANSMISSION RECEPTION ELECTROMAGNETIC WAVE,The transmission and reception of electromagnetic waves of radio frequency especially those carrying sound messages.
+RENEWABLE  ,GENERAL,SUSTAINABLE ENERGY LIMITLESS,Capable of being renewed.
+REVOLUTION,GENERAL,REVOLUTION CYCLE REPEATD,An instance of revolving.
+RIP,GENERAL,SEPARATE SPLIT TEAR,Tear or pull (something) quickly or forcibly away from something or someone.
+RISE 1,GENERAL,UP ELEVATE HIGH MOVEMENT,An upward movement; an instance of becoming higher
+RISE 2,GENERAL,UP ELEVATE HIGH MOVEMENT,An upward movement; an instance of becoming higher
+RISING,GENERAL,UP ELEVATE HIGH MOVEMENT,An upward movement; an instance of becoming higher.
+RISING AND FALLING 1,GENERAL,VARIABLE UP DOWN MOVEMENT,Rising up and falling down.
+RISING AND FALLING 2,GENERAL,VARIABLE UP DOWN MOVEMENT,Rising up and falling down.
+ROUND TRIP,GENERAL,TRAVEL TRIP JOURNEY DESTINATION ,A journey to one or more places and back again.
+RUN,GENERAL,,
+SHIMMER,GENERAL,,
+SLOW,GENERAL,,
+SMALL,GENERAL,,
+SMOKING,GENERAL,,
+SPEED,GENERAL,,
+SPLIT 1,GENERAL,,
+SPLIT 2,GENERAL,,
+START,GENERAL,,
+STEAK,GENERAL,,
+STOP,GENERAL,,
+STRUCTURE,GENERAL,,
+SUBMERGED,GENERAL,,
+SUBTRACT,GENERAL,,
+SUCCESS,GENERAL,,
+TAX,GENERAL,,
+TIME 1,GENERAL,,
+TIME 2,GENERAL,,
+TIME 3,GENERAL,,
+TOY,GENERAL,,
+TRANSCONTINENTAL  ,GENERAL,,
+UNDER,GENERAL,,
+UNDERGROUND 1,GENERAL,,
+UNDERGROUND 2,GENERAL,,
+UNDERGROUND 3,GENERAL,,
+UNKNOWN 1,GENERAL,,
+UNKNOWN 2,GENERAL,,
+UNLOCK 1,GENERAL,,
+UNLOCK 2,GENERAL,,
+VARIABLE,GENERAL,,
+WASTE,GENERAL,,
+WATER 1,GENERAL,,
+WATER 2,GENERAL,,
+WORK,GENERAL,,
+YEAR,GENERAL,,
+ABRASION 1,GEOLOGY,,
+ABRASION 2,GEOLOGY,,
+COAL,GEOLOGY,,
+COASTAL EROSION,GEOLOGY,,
+CORE,GEOLOGY,,
+CRUST,GEOLOGY,,
+CRYSTAL ,GEOLOGY,,
+DEPOSITION 1,GEOLOGY,,
+DEPOSITION 2,GEOLOGY,,
+DEPOSITION 3,GEOLOGY,,
+EROSION 1,GEOLOGY,,
+EROSION 2,GEOLOGY,,
+EROSION 3,GEOLOGY,,
+FAULT LINE,GEOLOGY,,
+IRON ,GEOLOGY,,
+MASS MOVEMENT,GEOLOGY,,
+ROCK,GEOLOGY,,
+SILICA,GEOLOGY,,
+SUBTERRANEAN,GEOLOGY,,
+WATER EROSION 1,GEOLOGY,,
+WATER EROSION 2,GEOLOGY,,
+WATER EROSION 3,GEOLOGY,,
+WEATHERING 1,GEOLOGY,,
+WEATHERING 2,GEOLOGY,,
+WIND ABRASION ,GEOLOGY,,
+WIND EROSION,GEOLOGY,,
+ADD FUEL TO THE FIRE,IDIOM,,
+ASLEEP AT THE WHEEL,IDIOM,,
+BARKING UP THE WRONG TREE,IDIOM,,
+BLESSING IN DISGUISE,IDIOM,,
+BREATH OF FRESH AIR,IDIOM,,
+CAT NAP,IDIOM,,
+COLD TURKEY,IDIOM,,
+CRYING OVER SPILLED MILK,IDIOM,,
+CRYING WOLF,IDIOM,,
+END OF THE ROAD,IDIOM,,
+FIGHT FIRE WITH FIRE,IDIOM,,
+FOOD FOR THOUGHT,IDIOM,,
+FROM RAGS TO RICHES,IDIOM,,
+FUNNY MONEY,IDIOM,,
+IN THE DOG HOUSE,IDIOM,,
+KICK THE BUCKET,IDIOM,,
+KNOCK ON WOOD,IDIOM,,
+LIKE A BROKEN RECORD,IDIOM,,
+LIKE A BULL IN A CHINA SHOP,IDIOM,,
+LITTLE BIRDY TOLD ME,IDIOM,,
+RAIN CHECK ,IDIOM,,
+RAINING CATS AND DOGS,IDIOM,,
+RISE AND SHINE,IDIOM,,
+ROCK THE BOAT,IDIOM,,
+RUN LIKE THE WIND,IDIOM,,
+SHOT IN THE DARK,IDIOM,,
+UNDER THE WEATHER,IDIOM,,
+ACCELERATE 1,PHYSICS,,
+ACCELERATE 2,PHYSICS,,
+ACCELERATE 3,PHYSICS,,
+ANCIENT,PHYSICS,,
+ASCENT,PHYSICS,,
+ATOM 1,PHYSICS,,
+ATOM 2,PHYSICS,,
+BILLIARDS,PHYSICS,,
+CARBOM DIOXIDE,PHYSICS,,
+CHAIN REACTION 1,PHYSICS,,
+CHAIN REACTION 2,PHYSICS,,
+CHEMICAL,PHYSICS,,
+CHEMICAL REACTION 1,PHYSICS,,
+CHEMICAL REACTION 2,PHYSICS,,
+ELASTIC LIMIT,PHYSICS,,
+ELECTRON MICROSCOPE,PHYSICS,,
+EVAPORATION,PHYSICS,,
+FORCE,PHYSICS,,
+GRAVITY,PHYSICS,,
+KINETIC ENERGY,PHYSICS,,
+LIQUID,PHYSICS,,
+MAGNETISM,PHYSICS,,
+MASS MOVEMENT,PHYSICS,,
+MOTION,PHYSICS,,
+NATURAL ACID,PHYSICS,,
+NUCLEAR 1,PHYSICS,,
+NUCLEAR 2,PHYSICS,,
+NUCLEAR FUSION,PHYSICS,,
+NUCLEAR REACTION,PHYSICS,,
+NUCLEAR WASTE,PHYSICS,,
+OXIDATION 1,PHYSICS,,
+OXIDATION 2,PHYSICS,,
+PRESSURE,PHYSICS,,
+RADIO WAVE,PHYSICS,,
+RADIO WAVELENGTH,PHYSICS,,
+RADIO WAVES,PHYSICS,,
+RADIOACTIVE  ,PHYSICS,,
+RADIOACTIVITY,PHYSICS,,
+RAY,PHYSICS,,
+SPECTRUM,PHYSICS,,
+SPEED OF LIGHT,PHYSICS,,
+STRAIGHT 1,PHYSICS,,
+STRAIGHT 2,PHYSICS,,
+TIME DILATION,PHYSICS,,
+URANIUM,PHYSICS,,
+VOLT,PHYSICS,,
+WAVE,PHYSICS,,
+WAVELENGTH,PHYSICS,MEASUREMENT WATER SOUND LIGHT OSCILLATION ,The distance between successive crests of a wave especially points in a sound wave or electromagnetic wave.
