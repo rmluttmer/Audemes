@@ -94,14 +94,14 @@ if ($result->num_rows > 0) {
     
     echo '<div class="col-md-3">';
     echo '<p>';
-    echo '<strong>Description:</strong>';
+    echo '<strong>Description: </strong>';
     echo $description;
     echo '</p>';
     echo '</div>';
     
     echo '<div class="col-md-3">';
     echo '<p>';
-    echo '<strong>Keywords:</strong>';
+    echo '<strong>Keywords: </strong>';
     echo $keywords;
     echo '</p>';
     echo '</div>';
