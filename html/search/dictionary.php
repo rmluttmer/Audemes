@@ -55,7 +55,7 @@
 
         <div class="col-md-4">
             <p>Search:</p>
-                       <input id="submit" type="submit" value="Go">
+            <input id="submit" type="submit" value="Go">
         </div>
     </form>
 </div>
@@ -73,19 +73,20 @@ function showSearch($catname, $string)
     }
     $selectedCategory = $_POST['category'];
     $sql;
+    // name, category, keywords, description (table columns)
     if ($catname == 'All') {
-        if ($string == ""){
+        if ($string == "") {
             $sql = "SELECT * FROM dictionary";
-        }
-        else{
-            $sql = "SELECT * FROM dictionary WHERE ";
+        } else {
+            $sql = "SELECT * FROM dictionary WHERE name LIKE '" . $string .
+                "%' OR keywords LIKE '" . $string . "%' OR description LIKE '" . $string . "%'";
         }
     } else {
-        if ($string == ""){
+        if ($string == "") {
             $sql = "SELECT * FROM dictionary WHERE category = '" . $catname . "'";
-        }
-        else {
-            $sql = "SELECT * FROM dictionary WHERE category = '" . $catname . "'";
+        } else {
+            $sql = "SELECT * FROM dictionary WHERE (category = '" . $catname . "') AND (name LIKE '" . $string .
+                "%' OR keywords LIKE '" . $string . "%' OR description LIKE '" . $string . "%')";
         }
 
     }
@@ -136,7 +137,7 @@ function showSearch($catname, $string)
 }
 
 if (isset($_POST['catname'])) {
-    var_dump($_POST);
+    //var_dump($_POST);
     showSearch($_POST['catname'], $_POST['search']);
 }
 ?>
