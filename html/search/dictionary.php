@@ -35,15 +35,15 @@
             <p>Category: </p>
             <select id="category" name="catname">
                 <option value="All">All</option>
-                <option value="Applied Science">Applied Science</option>
-                <option value="Astronomy">Astronomy</option>
+                <option value="APPLIED SCIENCE">Applied Science</option>
+                <option value="ASTRONOMY">Astronomy</option>
                 <option value="BIOLOGY">Biology</option>
-                <option value="4">Earth Science</option>
-                <option value="5">Energy</option>
-                <option value="6">General</option>
-                <option value="7">Geology</option>
-                <option value="8">Idioms</option>
-                <option value="9">Physics</option>
+                <option value="EARTH SCIENCE">Earth Science</option>
+                <option value="ENERGY">Energy</option>
+                <option value="GENERAL">General</option>
+                <option value="GEOLOGY">Geology</option>
+                <option value="IDIOMS">Idioms</option>
+                <option value="PHYSICS.">Physics</option>
             </select>
         </div>
         <div class="col-md-4">
@@ -108,21 +108,21 @@ function showSearch($catname, $string)
             echo '</div>';
 
             echo '<div class="col-md-3">';
-            echo '<p>';
+            echo '<p tabindex="0">';
             echo '<strong> Category: </strong>';
             echo $category;
             echo '</p>';
             echo '</div>';
 
             echo '<div class="col-md-3">';
-            echo '<p>';
+            echo '<p tabindex="0">';
             echo '<strong>Description: </strong>';
             echo $description;
             echo '</p>';
             echo '</div>';
 
             echo '<div class="col-md-3">';
-            echo '<p>';
+            echo '<p tabindex="0">';
             echo '<strong>Keywords: </strong>';
             echo $keywords;
             echo '</p>';
