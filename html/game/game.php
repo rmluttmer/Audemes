@@ -9,70 +9,6 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/homeStyle.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/playerStyles.css"/>
-    <script type="text/javascript" >
-        var choice;
-        var array = ['machine 1', 'rising', 'air 1'];
-        var answers = ['hot air balloon', 'airplane', 'tea kettle'];
-        function checkAnswer(choice){
-            if(choice.getAttribute('id') == 'airplane'){
-                alert('Correct!')
-            }
-            else {
-                alert('Sorry, try again!')
-            }
-        }
-
-        function demo(){
-            document.getElementById('gameStart').remove();
-            var list = document.createElement('ol');
-            var body = document.getElementById('left');
-            list.setAttribute('class', 'row');
-            list.setAttribute('id', 'advance');
-            body.appendChild(list);
-            for (var i = 0; i < 3; i++){
-                var audeme = document.createElement('li');
-                audeme.setAttribute('class', 'col-md-2');
-                list.appendChild(audeme);
-                var audio = document.createElement('audio');
-                audio.setAttribute('preload', 'auto');
-                audio.setAttribute('src', '../audio/'+array[i]+'.mp3');
-                audio.setAttribute('id', array[i]);
-                audeme.appendChild(audio);
-                var button = document.createElement('button');
-                button.setAttribute('onclick', 'document.getElementById("'+array[i]+'").play();');
-                button.setAttribute('tabindex', '0');
-                button.innerHTML = 'Play Sound';
-                audeme.appendChild(button);
-                var description = document.createElement('p');
-                description.innerHTML = 'Description: '+array[i];
-                description.setAttribute('tabindex', '0');
-                audeme.appendChild(description);
-            }
-            var listright = document.createElement('ol');
-            var right = document.getElementById('right');
-            var answerheading = document.createElement('h1');
-            answerheading.innerHTML = 'Answers';
-            right.appendChild(answerheading);
-            listright.setAttribute('class', 'row');
-            listright.setAttribute('id', 'advance');
-            right.appendChild(listright);
-            for (i = 0; i < 3; i++){
-                var answer = document.createElement('li');
-                answer.setAttribute('class', 'col-md-2');
-                listright.appendChild(answer);
-                var descriptionAnswer = document.createElement('p');
-                descriptionAnswer.innerHTML = 'Description: '+answers[i];
-                descriptionAnswer.setAttribute('tabindex', '0');
-                answer.appendChild(descriptionAnswer);
-                var buttonAnswer = document.createElement('button');
-                buttonAnswer.setAttribute('id', answers[i]);
-                buttonAnswer.setAttribute('onclick', 'checkAnswer('+buttonAnswer.getAttribute('id')+');');
-                buttonAnswer.setAttribute('tabindex', '0');
-                buttonAnswer.innerHTML = 'Choose';
-                answer.appendChild(buttonAnswer);
-            }
-        }
-    </script>
 
 </head>
 
@@ -88,42 +24,111 @@
         </div>
         <ul class="nav navbar-nav tabs" role="tablist">
             <li role="presentation" id="home"><a role="tab" tabindex="0" href="../index.html">Home</a></li>
-            <li role="presentation" id="dictionary"><a role="tab" tabindex="0" href="../search/dictionary.php">Dictionary</a></li>
-            <li role="presentation" id="game"><a role="tab" tabindex="0" href="#" >Games</a></li>
+            <li role="presentation" id="dictionary"><a role="tab" tabindex="0" href="../search/dictionary.php">Dictionary</a>
+            </li>
+            <li role="presentation" id="game"><a role="tab" tabindex="0" href="#">Games</a></li>
             <li role="presentation" id="about"><a role="tab" tabindex="0" href="../about.html">About</a></li>
         </ul>
     </div>
 </nav>
 <?php
-include '/home/phpcredentials/access.php';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+echo '<h1> Atomic Guessing Game </h1>';
+echo '<p> Listen to the three atomic Audemes on the left and guess the concept they represent from the choices on the right </p>';
 
-$sql = "SELECT name FROM gridgame";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        //echo "name: " . $row["name"]. "<br>";
+function checkAnswer($answer){
+    if ($answer == 1){
+        $correct = "../audio/RIGHT ANSWER CHEER.mp3";
+        echo '<audio autoplay src="' . $correct . '" preload="auto"></audio>';
     }
-} else {
-    echo "0 results";
-}
-$conn->close();
-?>
-<div class="row">
-    <div class="col-sm-6 text-left" id="left">
-        <h1 class="audemeTitle" tabindex="0">Atomic Guessing Game</h1>
-        <p tabindex="0">Listen to the three atomic audemes and guess the concept they represent from the choices on the right</p>
-        <button onclick="demo()" class="customButton center" id="gameStart" tabindex="0">GAME START</button>
-    </div>
-    <div class="col-sm-6 text-left" id="right">
+    else {
+        $incorrect = "../audio/WRONG ANSWER oops.mp3";
+        echo '<audio autoplay src="' . $incorrect . '" preload="auto"></audio>';
+    }
 
-    </div>
-</div>
+}
+
+
+function getGame()
+{
+    include '/home/phpcredentials/access.php';
+// Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+//atomic, name, hint
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT * FROM gridgame";
+    $result = $conn->query($sql);
+
+
+    if ($result->num_rows > 0) {
+        // output data of each row
+        for ($i = 0; $array[$i] = $result->fetch_assoc(); $i++) ;
+        shuffle($array);
+        $row = $array[0];
+        $wrong1 = $array[1]["name"];
+        $wrong2 = $array[2]["name"];
+        $name = $row["name"];
+        $atomics = $row["atomic"];
+        $hint = $row["hint"];
+        $atomicarray = explode(" ", $atomics);
+        $answerarray = array($name);
+        array_push($answerarray, $wrong1);
+        array_push($answerarray, $wrong2);
+        echo '<div class="row">';
+        echo '<div class="col-md-6" id=left>';
+        echo '<h3> Atomic Audemes </h3>';
+        foreach ($atomicarray as $atomic) {
+            $atomic = trim($atomic);
+            if (empty($atomic)) {
+                continue;
+            }
+            echo '<div class="col-md-2">';
+            echo '<audio id="' . strtolower($atomic) . '" src="http://audemes.aphtech.org/audio/' . strtolower($atomic) . '.mp3" preload="auto"></audio>';
+            echo '<button type="submit" onclick="document.getElementById(\'' . strtolower($atomic) . '\').play();">' . $atomic . '</button>';
+            echo '</div>';
+        }
+        echo '<div class="col-md-2">';
+        echo '<p> Hint: ' . $hint . '</p>';
+        echo '</div>';
+        echo '</div>';
+        echo '<div class="col-md-6 text-left" id=right>';
+        echo '<h3> Answer choices </h3>';
+        shuffle($answerarray);
+        foreach ($answerarray as $answer) {
+            echo '<div class="col-md-2">';
+            echo '<form method="post">';
+            echo '<button type="submit" name="answer" value="' . ($answer == $name) . '">' . $answer . '</button>';
+            echo '</form>';
+            echo '</div>';
+        }
+        echo '</div>';
+        echo '</div>';
+
+        echo '</div>';
+    } else {
+        echo "Connection problems with the game server.";
+    }
+    $conn->close();
+}
+echo '<div class="row">';
+echo '<form method="post">';
+echo '<div class="col-md-6" >';
+echo '<button type="submit" name="next"> Next </button>';
+echo '</div>';
+echo '</form>';
+echo '</div>';
+if (isset($_POST['next'])) {
+    //var_dump($_POST);
+    getGame();
+}
+
+if (isset($_POST['answer'])) {
+    //var_dump($_POST);
+    checkAnswer($_POST['answer']);
+}
+
+?>
