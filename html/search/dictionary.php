@@ -97,6 +97,7 @@ function showSearch($catname, $string)
         // output data of each row
         while ($row = $result->fetch_assoc()) {
             $name = $row["name"];
+            $name = trim($name);
             $description = $row["description"];
             $keywords = $row["keywords"];
             $category = $row["category"];
