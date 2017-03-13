@@ -1,5 +1,0 @@
-Python 3.6.0 w/ Pip 
-Django 1.10.4
-jQuery 3.1.1
-Bootstrap 3.3.7
-Readable theme from https://bootswatch.com/

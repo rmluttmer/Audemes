@@ -1,1 +1,0 @@
-This folder contains the scroll list used in the game.
