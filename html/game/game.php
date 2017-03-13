@@ -33,8 +33,8 @@
 </nav>
 <?php
 
-echo '<h1> Atomic Guessing Game </h1>';
-echo '<p> Listen to the three atomic Audemes on the left and guess the concept they represent from the choices on the right </p>';
+echo '<h1 tabindex="0"> Atomic Guessing Game </h1>';
+echo '<p tabindex="0"> Listen to the three atomic Audemes on the left and guess the concept they represent from the choices on the right </p>';
 
 function checkAnswer($answer){
     if ($answer == 1){
@@ -80,7 +80,7 @@ function getGame()
         array_push($answerarray, $wrong2);
         echo '<div class="row">';
         echo '<div class="col-md-6" id=left>';
-        echo '<h3> Atomic Audemes </h3>';
+        echo '<h3 tabindex="0"> Atomic Audemes </h3>';
         foreach ($atomicarray as $atomic) {
             $atomic = trim($atomic);
             if (empty($atomic)) {
@@ -92,11 +92,11 @@ function getGame()
             echo '</div>';
         }
         echo '<div class="col-md-2">';
-        echo '<p> Hint: ' . $hint . '</p>';
+        echo '<p tabindex="0"> Hint: ' . $hint . '</p>';
         echo '</div>';
         echo '</div>';
         echo '<div class="col-md-6 text-left" id=right>';
-        echo '<h3> Answer choices </h3>';
+        echo '<h3 tabindex="0"> Answer choices </h3>';
         shuffle($answerarray);
         foreach ($answerarray as $answer) {
             echo '<div class="col-md-2">';
@@ -129,6 +129,7 @@ if (isset($_POST['next'])) {
 if (isset($_POST['answer'])) {
     //var_dump($_POST);
     checkAnswer($_POST['answer']);
+    getGame();
 }
 
 ?>
