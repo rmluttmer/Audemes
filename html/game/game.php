@@ -8,8 +8,6 @@
     <title>Audeme Game</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/homeStyle.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/playerStyles.css"/>
-
 </head>
 
 
