@@ -36,11 +36,11 @@ echo '<p tabindex="0"> Listen to the three atomic Audemes on the left and guess 
 
 function checkAnswer($answer){
     if ($answer == 1){
-        $correct = "../audio/RIGHT ANSWER CHEER.mp3";
+        $correct = "../audio/right answer cheer.mp3";
         echo '<audio autoplay src="' . $correct . '" preload="auto"></audio>';
     }
     else {
-        $incorrect = "../audio/WRONG ANSWER oops.mp3";
+        $incorrect = "../audio/wrong answer oops.mp3";
         echo '<audio autoplay src="' . $incorrect . '" preload="auto"></audio>';
     }
 
