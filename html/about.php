@@ -4,28 +4,12 @@
 
     <title>Audeme - Home</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/homeStyle.css" rel="stylesheet">
+    <?php include_once 'includes/universalCSS.php' ?>
 
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid text-center">
-        <div class="navbar-header">
-            <a class="navbar-brand logo" href="#">
-                <img id="logoimage" alt="logo" src="images/Audeme-Logo-small3.png">
-            </a>
-        </div>
-        <ul class="nav navbar-nav tabs" role="tablist">
-            <li role="presentation" id="home"><a role="tab" tabindex="0" href="index.html">Home</a></li>
-            <li role="presentation" id="dictionary"><a role="tab" tabindex="0"
-                                                       href="search/dictionary.php">Dictionary</a></li>
-            <li role="presentation" id="game"><a role="tab" tabindex="0" href="game/game.php">Games</a></li>
-            <li role="presentation" id="about"><a role="tab" tabindex="0" href="#">About</a></li>
-        </ul>
-    </div>
-</nav>
+
+<?php include_once 'includes/navigation.php' ?>
 
 <h1 tabindex="0">Let us know what you think about the whole thing by contacting us.</h1>
 
