@@ -54,7 +54,6 @@ class Dictionary
             while ($row = $result->fetch_assoc()) {
                 $name = $row["name"];
                 $name = trim($name);
-                $name = ucfirst(strtolower($name));
                 $description = $row["description"];
                 $keywords = $row["keywords"];
                 $category = $row["category"];
@@ -63,7 +62,7 @@ class Dictionary
 
                 echo '<div class="col-md-8 panel panel-default">';
                 echo '<audio id="' . $name . '" src="http://audemes.aphtech.org/audio/' . strtolower($name) . '.mp3" preload="auto"></audio>';
-                echo '<button class="btn btn-primary" type="submit" onclick="document.getElementById(\'' . $name . '\').play();">' . $name . '</button>';
+                echo '<button class="btn btn-primary" type="submit" onclick="document.getElementById(\'' . $name . '\').play();">' . ucfirst(strtolower($name)) . '</button>';
                 echo '<p tabindex="0">';
                 echo '<strong> Category: </strong>';
                 echo $category;
