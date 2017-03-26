@@ -21,7 +21,7 @@ echo '<p tabindex="0"> Listen to the three atomic Audemes on the left and guess 
 
 function checkAnswer($answer){
     if ($answer == 1){
-        $correct = "../audio/right answer cheer.mp3";
+        $correct = "../audio/4D FUN.mp3";
         echo '<audio autoplay src="' . $correct . '" preload="auto"></audio>';
     }
     else {
