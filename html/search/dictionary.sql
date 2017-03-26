@@ -5,7 +5,7 @@ CREATE TABLE `dictionary` (
   `name` varchar(100) NOT NULL,
   `category` varchar(100) NOT NULL,
   `keywords` varchar(100) NOT NULL,
-  `description` varchar(100) NOT NULL
+  `description` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
