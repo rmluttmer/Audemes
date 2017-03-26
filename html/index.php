@@ -26,7 +26,8 @@
                     <p>Pronounced "awe deems," they are brief audio illustrations that combine sound effects,
                         sometimes with music, to form aural symbols that signify various ideas, things, actions
                         and situations. For example, an Audeme combining the sound of a cat's meow and a person
-                        snoring could mean "Cat Nap". <br> <br> Since 2007 we have worked with blind and visually
+                        snoring could mean "Cat Nap". <br> <br> Since 2007 Professor Mannheimer of Indiana University
+                        Purdue University Indianapolis has worked with blind and visually
                         impaired students
                         and their teachers to develop audemes and audeme games. The results have been very encouraging.
                         Students who hear audemes presented with educational materials score significantly better in
@@ -39,9 +40,12 @@
                         students
                         expressed significantly more positive subjective attitudes about science and science learning.
                         These results
-                        have helped our work generate grant funding from the Nina Mason Pulliam Charitable Trust, Google
+                        have helped Professor Mannheimer's work generate grant funding from the Nina Mason Pulliam
+                        Charitable Trust, Google
                         Research Awards
-                        and the National Science Foundation. <br> <br> This website offers a basic introduction to the
+                        and the National Science Foundation. In 2016, Professor Mannheimer partnered with the American
+                        Printing House for the Blind and students from Indiana University Southeast to continue work on
+                        the project. <br> <br> This website offers a basic introduction to the
                         whole idea of audemes and
                         audeme games. We believe we have just begun to explore the possibilities of audemes, audeme
                         games and other
@@ -55,13 +59,14 @@
                     <h3 class="text-center" tabindex="0">Try it now!</h3>
                 </div>
                 <div class="panel-body">
-                            <div class="track-info-container">
-                                <audio id="endofroad" src="audio/end of the road.mp3" preload="auto"></audio>
-                                <button tabindex="0" onclick="document.getElementById('endofroad').play();">Play
-                                    Sound</button>
-                                <p tabindex="0">Description: End of the Road</p>
-                            </div>
-                        <img class="img-responsive" src="images/listeningnew.png">
+                    <div class="track-info-container">
+                        <audio id="endofroad" src="audio/end of the road.mp3" preload="auto"></audio>
+                        <button tabindex="0" onclick="document.getElementById('endofroad').play();">Play
+                            Sound
+                        </button>
+                        <p tabindex="0">Description: End of the Road</p>
+                    </div>
+                    <img class="img-responsive" src="images/listeningnew.png">
                 </div>
             </div>
         </div>
