@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Audeme Grids</title>
+    <title>APH Tech Audemes</title>
     <?php include_once 'includes/universalCSS.php' ?>
 
 </head>
