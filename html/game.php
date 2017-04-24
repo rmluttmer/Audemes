@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?php include_once 'includes/universalCSS.php' ?>
+    <script type="text/javascript">
+        (window).onload = (function () {
+            if (document.getElementById("start") != null) {
+                document.getElementById("start").focus();
+            }
+        });
+    </script>
 </head>
 
 
@@ -19,14 +26,19 @@
 echo '<h1 tabindex="0"> Atomic Guessing Game </h1>';
 echo '<p tabindex="0"> Listen to the three atomic Audemes on the left and guess the concept they represent from the choices on the right </p>';
 
-function checkAnswer($answer){
-    if ($answer == 1){
+session_start();
+
+function checkAnswer($answer)
+{
+    if ($answer == 1) {
         $correct = "../audio/4D FUN.mp3";
         echo '<audio autoplay src="' . $correct . '" preload="auto"></audio>';
-    }
-    else {
+        unset($_SESSION['hint']);
+        unset($_SESSION['repeatrow']);
+    } else {
         $incorrect = "../audio/wrong answer oops.mp3";
         echo '<audio autoplay src="' . $incorrect . '" preload="auto"></audio>';
+        $_SESSION['hint'] = true;
     }
 
 }
@@ -51,19 +63,35 @@ function getGame()
         // output data of each row
         for ($i = 0; $array[$i] = $result->fetch_assoc(); $i++) ;
         shuffle($array);
-        $row = $array[0];
+        if (isset($_SESSION['hint'])) {
+            $hint = true;
+        }
+        else {
+            $hint = false;
+        }
+        if (isset($_SESSION['repeatrow'])){
+            $row = $_SESSION['repeatrow'];
+        }
+        else {
+            $row = $array[0];
+            $_SESSION['repeatrow'] = $array[0];
+        }
         $wrong1 = $array[1]["name"];
         $wrong2 = $array[2]["name"];
         $name = $row["name"];
         $atomics = $row["atomic"];
-        $hint = $row["hint"];
+        $hinttext = $row["hint"];
         $atomicarray = explode(" ", $atomics);
         $answerarray = array($name);
         array_push($answerarray, $wrong1);
         array_push($answerarray, $wrong2);
         echo '<div class="row">';
         echo '<div class="col-md-6" id=left>';
-        echo '<h3 tabindex="0"> Atomic Audemes </h3>';
+        if (!$hint) {
+            echo '<h3 tabindex="0" id="start"> Atomic Audemes </h3>';
+        } else {
+            echo '<h3 tabindex="0"> Atomic Audemes </h3>';
+        }
         foreach ($atomicarray as $atomic) {
             $atomic = trim($atomic);
             if (empty($atomic)) {
@@ -75,7 +103,9 @@ function getGame()
             echo '</div>';
         }
         echo '<div class="col-md-2">';
-        echo '<p tabindex="0"> Hint: ' . $hint . '</p>';
+        if ($hint) {
+            echo '<p tabindex="0" id="start"> Hint: ' . $hinttext . '</p>';
+        }
         echo '</div>';
         echo '</div>';
         echo '<div class="col-md-6 text-left" id=right>';
@@ -97,6 +127,7 @@ function getGame()
     }
     $conn->close();
 }
+
 echo '<div class="row">';
 echo '<form method="post">';
 echo '<div class="col-md-6" >';
@@ -106,6 +137,8 @@ echo '</form>';
 echo '</div>';
 if (isset($_POST['next'])) {
     //var_dump($_POST);
+    unset($_SESSION['hint']);
+    unset($_SESSION['repeatrow']);
     getGame();
 }
 
